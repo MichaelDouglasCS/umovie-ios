@@ -14,18 +14,10 @@
 		6155E60226CC139400078289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60126CC139400078289 /* Assets.xcassets */; };
 		6155E60526CC139400078289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60326CC139400078289 /* LaunchScreen.storyboard */; };
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
-		6155E61B26CC139400078289 /* uMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E61A26CC139400078289 /* uMovieUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		6155E60C26CC139400078289 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6155E5ED26CC139300078289 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6155E5F426CC139300078289;
-			remoteInfo = uMovie;
-		};
-		6155E61726CC139400078289 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6155E5ED26CC139300078289 /* Project object */;
 			proxyType = 1;
@@ -46,9 +38,6 @@
 		6155E60B26CC139400078289 /* uMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E60F26CC139400078289 /* uMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMovieTests.swift; sourceTree = "<group>"; };
 		6155E61126CC139400078289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6155E61626CC139400078289 /* uMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6155E61A26CC139400078289 /* uMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMovieUITests.swift; sourceTree = "<group>"; };
-		6155E61C26CC139400078289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +55,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6155E61326CC139400078289 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +63,6 @@
 			children = (
 				6155E5F726CC139300078289 /* uMovie */,
 				6155E60E26CC139400078289 /* uMovieTests */,
-				6155E61926CC139400078289 /* uMovieUITests */,
 				6155E5F626CC139300078289 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +72,6 @@
 			children = (
 				6155E5F526CC139300078289 /* uMovie.app */,
 				6155E60B26CC139400078289 /* uMovieTests.xctest */,
-				6155E61626CC139400078289 /* uMovieUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,15 +97,6 @@
 				6155E61126CC139400078289 /* Info.plist */,
 			);
 			path = uMovieTests;
-			sourceTree = "<group>";
-		};
-		6155E61926CC139400078289 /* uMovieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6155E61A26CC139400078289 /* uMovieUITests.swift */,
-				6155E61C26CC139400078289 /* Info.plist */,
-			);
-			path = uMovieUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +137,6 @@
 			productReference = 6155E60B26CC139400078289 /* uMovieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6155E61526CC139400078289 /* uMovieUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6155E62526CC139400078289 /* Build configuration list for PBXNativeTarget "uMovieUITests" */;
-			buildPhases = (
-				6155E61226CC139400078289 /* Sources */,
-				6155E61326CC139400078289 /* Frameworks */,
-				6155E61426CC139400078289 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6155E61826CC139400078289 /* PBXTargetDependency */,
-			);
-			name = uMovieUITests;
-			productName = uMovieUITests;
-			productReference = 6155E61626CC139400078289 /* uMovieUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +150,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					6155E60A26CC139400078289 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 6155E5F426CC139300078289;
-					};
-					6155E61526CC139400078289 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 6155E5F426CC139300078289;
 					};
@@ -221,7 +170,6 @@
 			targets = (
 				6155E5F426CC139300078289 /* uMovie */,
 				6155E60A26CC139400078289 /* uMovieTests */,
-				6155E61526CC139400078289 /* uMovieUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6155E60926CC139400078289 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6155E61426CC139400078289 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,14 +213,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6155E61226CC139400078289 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6155E61B26CC139400078289 /* uMovieUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,11 +220,6 @@
 			isa = PBXTargetDependency;
 			target = 6155E5F426CC139300078289 /* uMovie */;
 			targetProxy = 6155E60C26CC139400078289 /* PBXContainerItemProxy */;
-		};
-		6155E61826CC139400078289 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6155E5F426CC139300078289 /* uMovie */;
-			targetProxy = 6155E61726CC139400078289 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -439,6 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q582659G6;
 				INFOPLIST_FILE = uMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.umoviebrasil.uMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -458,6 +387,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q582659G6;
 				INFOPLIST_FILE = uMovie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +395,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.umoviebrasil.uMovie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -513,46 +443,6 @@
 			};
 			name = Release;
 		};
-		6155E62626CC139400078289 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4Q582659G6;
-				INFOPLIST_FILE = uMovieUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.umoviebrasil.uMovieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = uMovie;
-			};
-			name = Debug;
-		};
-		6155E62726CC139400078289 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4Q582659G6;
-				INFOPLIST_FILE = uMovieUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.umoviebrasil.uMovieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = uMovie;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +469,6 @@
 			buildConfigurations = (
 				6155E62326CC139400078289 /* Debug */,
 				6155E62426CC139400078289 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6155E62526CC139400078289 /* Build configuration list for PBXNativeTarget "uMovieUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6155E62626CC139400078289 /* Debug */,
-				6155E62726CC139400078289 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
