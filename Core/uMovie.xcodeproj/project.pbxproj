@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B44A6573FC81484B8D62C42 /* Pods_uMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54E1656F698A5D7EAB3E365 /* Pods_uMovieTests.framework */; };
 		6155E5F926CC139300078289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E5F826CC139300078289 /* AppDelegate.swift */; };
 		6155E5FB26CC139300078289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E5FA26CC139300078289 /* SceneDelegate.swift */; };
 		6155E5FD26CC139300078289 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E5FC26CC139300078289 /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		6155E60226CC139400078289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60126CC139400078289 /* Assets.xcassets */; };
 		6155E60526CC139400078289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60326CC139400078289 /* LaunchScreen.storyboard */; };
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
+		E2D8EA2BA76E997B82594346 /* Pods_uMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4DAF20D3D6672281809F0A /* Pods_uMovie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2F936F6BF151B8B98BEDE2 /* Pods-uMovieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovieTests.release.xcconfig"; path = "Target Support Files/Pods-uMovieTests/Pods-uMovieTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F91BB8E7E3E12B02ADDFC7C /* Pods-uMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovie.debug.xcconfig"; path = "Target Support Files/Pods-uMovie/Pods-uMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		5F213EBBCE7BCEDAC78908A7 /* Pods-uMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-uMovieTests/Pods-uMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6155E5F526CC139300078289 /* uMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E5F826CC139300078289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6155E5FA26CC139300078289 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,9 @@
 		6155E60B26CC139400078289 /* uMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E60F26CC139400078289 /* uMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMovieTests.swift; sourceTree = "<group>"; };
 		6155E61126CC139400078289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF4DAF20D3D6672281809F0A /* Pods_uMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54E1656F698A5D7EAB3E365 /* Pods_uMovieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uMovieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA3AA0859E8290417B0D656 /* Pods-uMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovie.release.xcconfig"; path = "Target Support Files/Pods-uMovie/Pods-uMovie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D8EA2BA76E997B82594346 /* Pods_uMovie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B44A6573FC81484B8D62C42 /* Pods_uMovieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				6155E5F726CC139300078289 /* uMovie */,
 				6155E60E26CC139400078289 /* uMovieTests */,
 				6155E5F626CC139300078289 /* Products */,
+				AD4364864A2D1A1477AA1556 /* Pods */,
+				A662020C38F87A22D7A950A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,27 @@
 			path = uMovieTests;
 			sourceTree = "<group>";
 		};
+		A662020C38F87A22D7A950A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF4DAF20D3D6672281809F0A /* Pods_uMovie.framework */,
+				C54E1656F698A5D7EAB3E365 /* Pods_uMovieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD4364864A2D1A1477AA1556 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F91BB8E7E3E12B02ADDFC7C /* Pods-uMovie.debug.xcconfig */,
+				EEA3AA0859E8290417B0D656 /* Pods-uMovie.release.xcconfig */,
+				5F213EBBCE7BCEDAC78908A7 /* Pods-uMovieTests.debug.xcconfig */,
+				0B2F936F6BF151B8B98BEDE2 /* Pods-uMovieTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6155E61F26CC139400078289 /* Build configuration list for PBXNativeTarget "uMovie" */;
 			buildPhases = (
+				25838E71E597FCF1C900293C /* [CP] Check Pods Manifest.lock */,
 				6155E5F126CC139300078289 /* Sources */,
 				6155E5F226CC139300078289 /* Frameworks */,
 				6155E5F326CC139300078289 /* Resources */,
+				7BB9C79A958B6698AD03784E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6155E62226CC139400078289 /* Build configuration list for PBXNativeTarget "uMovieTests" */;
 			buildPhases = (
+				595F9E39FA3CF2FA3327E7B3 /* [CP] Check Pods Manifest.lock */,
 				6155E60726CC139400078289 /* Sources */,
 				6155E60826CC139400078289 /* Frameworks */,
 				6155E60926CC139400078289 /* Resources */,
@@ -193,6 +229,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25838E71E597FCF1C900293C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		595F9E39FA3CF2FA3327E7B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uMovieTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BB9C79A958B6698AD03784E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uMovie/Pods-uMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uMovie/Pods-uMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uMovie/Pods-uMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6155E5F126CC139300078289 /* Sources */ = {
@@ -361,6 +461,7 @@
 		};
 		6155E62026CC139400078289 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F91BB8E7E3E12B02ADDFC7C /* Pods-uMovie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +482,7 @@
 		};
 		6155E62126CC139400078289 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEA3AA0859E8290417B0D656 /* Pods-uMovie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -401,6 +503,7 @@
 		};
 		6155E62326CC139400078289 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F213EBBCE7BCEDAC78908A7 /* Pods-uMovieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -423,6 +526,7 @@
 		};
 		6155E62426CC139400078289 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2F936F6BF151B8B98BEDE2 /* Pods-uMovieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
