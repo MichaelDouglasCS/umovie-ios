@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dEZ-Qn-Rx0">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="d2i-2J-UeD">
+            <objects>
+                <viewController id="dEZ-Qn-Rx0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9x-oB-Ddl">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="umovie-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-Uf-Xfp">
+                                <rect key="frame" x="121.66666666666669" y="339" width="205" height="183"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cqs-Uf-Xfp" secondAttribute="height" multiplier="102:91" id="4x5-lL-GV7"/>
+                                    <constraint firstAttribute="width" constant="205" id="ecb-FJ-7hd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoF-dO-Nv5">
+                                <rect key="frame" x="126.33333333333333" y="547" width="175.66666666666669" height="50"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="u">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99607843137254903" green="0.49019607843137253" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="50" name="HiraMaruProN-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Movie">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="50" name="HiraMaruProN-W4"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Pc-kr-HOF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cqs-Uf-Xfp" firstAttribute="centerX" secondItem="0Pc-kr-HOF" secondAttribute="centerX" constant="10" id="12k-8o-eml"/>
+                            <constraint firstItem="IoF-dO-Nv5" firstAttribute="centerY" secondItem="0Pc-kr-HOF" secondAttribute="centerY" constant="104" id="1mp-Cc-xPg"/>
+                            <constraint firstItem="IoF-dO-Nv5" firstAttribute="top" secondItem="Cqs-Uf-Xfp" secondAttribute="bottom" constant="25" id="gP9-Ku-u8y"/>
+                            <constraint firstItem="IoF-dO-Nv5" firstAttribute="centerX" secondItem="0Pc-kr-HOF" secondAttribute="centerX" id="uZY-3y-abU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWe-XO-2xv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-142.99065420560746" y="371.92224622030238"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="umovie-icon" width="204" height="182"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
