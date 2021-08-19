@@ -1,6 +1,9 @@
 import Foundation
 import UIKit
 
+typealias Images = Asset.Assets
+typealias Colors = Asset.Colors
+
 struct Font {
 
     static func system(

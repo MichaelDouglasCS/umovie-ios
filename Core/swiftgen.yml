@@ -1,0 +1,9 @@
+xcassets:
+  - inputs:
+      - uMovie/Resources/Assets.xcassets
+      - uMovie/Resources/Colors.xcassets
+    outputs:
+      templateName: swift5
+      forceProvidesNamespaces: true
+      forceFileNameEnum: true
+      output: uMovie/Sources/Shared/Generated/Assets.swift

@@ -29,7 +29,7 @@ final class LoginView: UIView {
     // MARK: - View Properties
 
     private lazy var brandImageView: UIImageView = {
-        let imageView = UIImageView(image: Image.brandIcon)
+        let imageView = UIImageView(image: Images.umovieIcon.image)
         return imageView
     }()
 
@@ -39,7 +39,7 @@ final class LoginView: UIView {
 
         let font = Font.system(withSize: 55, weight: .regular, design: .rounded)
         let attributedString = NSMutableAttributedString(string: "uMovie", attributes: [NSAttributedString.Key.font: font])
-        attributedString.addAttributes([NSAttributedString.Key.foregroundColor: Color.brandColor], range: .init(location: 0, length: 1))
+        attributedString.addAttributes([NSAttributedString.Key.foregroundColor: Colors.brandColor.color], range: .init(location: 0, length: 1))
 
         label.attributedText = attributedString
         return label
@@ -55,7 +55,7 @@ final class LoginView: UIView {
     }()
 
     private lazy var brandIllustrationImageView: UIImageView = {
-        let imageView = UIImageView(image: Image.brandIllustration)
+        let imageView = UIImageView(image: Images.brandIllustration.image)
         return imageView
     }()
 
@@ -63,14 +63,14 @@ final class LoginView: UIView {
         let label = UILabel()
         label.text = "Como deseja continuar?"
         label.font = Font.system(withSize: 17.0)
-        label.textColor = Color.subtitleColor
+        label.textColor = Colors.subtitleColor.color
         return label
     }()
 
     private lazy var continueWithAppleButton: UIButton = {
         let button = UIButton()
         button.setTitle("Continuar com a Apple", for: .normal)
-        button.setImage(Image.appleIcon, for: .normal)
+        button.setImage(Images.appleIcon.image, for: .normal)
         return button
     }()
 
@@ -94,7 +94,7 @@ final class LoginView: UIView {
 extension LoginView {
 
     private func setupUI() {
-        backgroundColor = Color.backgroundColor
+        backgroundColor = Colors.backgroundColor.color
         setupBrandContraints()
         setupContinueLabelConstraints()
     }
