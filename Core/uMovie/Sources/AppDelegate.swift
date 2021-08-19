@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  uMovie
-//
-//  Created by Michael Douglas on 17/08/21.
-//
-
 import UIKit
 
 @main
@@ -31,10 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = self.window else { return }
 
-//        let moviesView = MoviesWireframe().instantiateView()
-//        let navigationView = UINavigationController(rootViewController: moviesView)
-//        window.rootViewController = navigationView
-//        window.makeKeyAndVisible()
+        let loginView = LoginFactory().make()
+        window.rootViewController = loginView
+        window.makeKeyAndVisible()
     }
 }
-
