@@ -1,10 +1,3 @@
-//
-//  LoginView.swift
-//  uMovie
-//
-//  Created by Michael Douglas on 18/08/21.
-//
-
 import Foundation
 import SnapKit
 import UIKit
@@ -37,7 +30,7 @@ final class LoginView: UIView {
         let label = UILabel()
         label.textAlignment = .center
 
-        let font = Font.system(withSize: 55, weight: .regular, design: .rounded)
+        let font = Fonts.defaultSystem(withSize: 55, weight: .regular, design: .rounded)
         let attributedString = NSMutableAttributedString(string: "uMovie", attributes: [NSAttributedString.Key.font: font])
         attributedString.addAttributes([NSAttributedString.Key.foregroundColor: Colors.brandColor.color], range: .init(location: 0, length: 1))
 
@@ -61,8 +54,8 @@ final class LoginView: UIView {
 
     private lazy var continueLabel: UILabel = {
         let label = UILabel()
-        label.text = "Como deseja continuar?"
-        label.font = Font.system(withSize: 17.0)
+        label.text = Localization.Login.ContinueOption.title
+        label.font = Fonts.defaultSystem(withSize: 17.0)
         label.textColor = Colors.subtitleColor.color
         return label
     }()

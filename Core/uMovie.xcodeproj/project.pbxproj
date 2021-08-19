@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6106690726CEBEC100F0E6F1 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6106690626CEBEC100F0E6F1 /* swiftgen.yml */; };
+		6125783B26CED18000653CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6125783926CED18000653CB5 /* LaunchScreen.storyboard */; };
+		6125783D26CED55100653CB5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6125783C26CED55100653CB5 /* Localization.swift */; };
 		613B0A2226CDA75900451BA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2126CDA75900451BA2 /* LoginViewController.swift */; };
 		613B0A2426CDADC400451BA2 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2326CDADC400451BA2 /* LoginFactory.swift */; };
 		613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */; };
 		6155E5F926CC139300078289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E5F826CC139300078289 /* AppDelegate.swift */; };
 		6155E60226CC139400078289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60126CC139400078289 /* Assets.xcassets */; };
-		6155E60526CC139400078289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60326CC139400078289 /* LaunchScreen.storyboard */; };
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
 		6187232626CD782000BE2EA3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187232526CD782000BE2EA3 /* LoginView.swift */; };
 		6194955026CE08AD00FA7A2D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194954F26CE08AD00FA7A2D /* UIColorExtension.swift */; };
 		61C15EC726CEC46E00162D38 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C15EC626CEC46E00162D38 /* Assets.swift */; };
 		61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C15EC826CEC65B00162D38 /* Colors.xcassets */; };
+		61C15ECC26CECFA000162D38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C15ECE26CECFA000162D38 /* Localizable.strings */; };
 		DD497C3107091B3B06071D67 /* Pods_uMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E636327A7618528BEDEE861 /* Pods_uMovie.framework */; };
 		E860CCF66FC7C222F53C16E9 /* Pods_uMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29AA45A2448B676B8218B91 /* Pods_uMovieTests.framework */; };
 /* End PBXBuildFile section */
@@ -36,13 +38,14 @@
 /* Begin PBXFileReference section */
 		377A21C533868BC78094D19D /* Pods-uMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovie.debug.xcconfig"; path = "Target Support Files/Pods-uMovie/Pods-uMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		6106690626CEBEC100F0E6F1 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		6125783A26CED18000653CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6125783C26CED55100653CB5 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		613B0A2126CDA75900451BA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		613B0A2326CDADC400451BA2 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGenUtils.swift; sourceTree = "<group>"; };
 		6155E5F526CC139300078289 /* uMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E5F826CC139300078289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6155E60126CC139400078289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6155E60426CC139400078289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6155E60626CC139400078289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6155E60B26CC139400078289 /* uMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E60F26CC139400078289 /* uMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMovieTests.swift; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		6194954F26CE08AD00FA7A2D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		61C15EC626CEC46E00162D38 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		61C15EC826CEC65B00162D38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		61C15ECD26CECFA000162D38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		61C15ED226CED09A00162D38 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		87E50DA0AD8FF654ECEC9104 /* Pods-uMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-uMovieTests/Pods-uMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E636327A7618528BEDEE861 /* Pods_uMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3848F22310F281EAB021FC7 /* Pods-uMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovie.release.xcconfig"; path = "Target Support Files/Pods-uMovie/Pods-uMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +86,7 @@
 		6106690826CEC3C200F0E6F1 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				6125783C26CED55100653CB5 /* Localization.swift */,
 				61C15EC626CEC46E00162D38 /* Assets.swift */,
 			);
 			path = Generated;
@@ -101,7 +107,8 @@
 			children = (
 				6155E60126CC139400078289 /* Assets.xcassets */,
 				61C15EC826CEC65B00162D38 /* Colors.xcassets */,
-				6155E60326CC139400078289 /* LaunchScreen.storyboard */,
+				6125783926CED18000653CB5 /* LaunchScreen.storyboard */,
+				61C15ECE26CECFA000162D38 /* Localizable.strings */,
 				610DED6326CC6D8900FE9016 /* SupportingFiles */,
 			);
 			path = Resources;
@@ -317,6 +324,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"pt-BR",
 				Base,
 			);
 			mainGroup = 6155E5EC26CC139300078289;
@@ -335,9 +343,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6155E60526CC139400078289 /* LaunchScreen.storyboard in Resources */,
+				61C15ECC26CECFA000162D38 /* Localizable.strings in Resources */,
 				61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */,
 				6155E60226CC139400078289 /* Assets.xcassets in Resources */,
+				6125783B26CED18000653CB5 /* LaunchScreen.storyboard in Resources */,
 				6106690726CEBEC100F0E6F1 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +471,7 @@
 				613B0A2426CDADC400451BA2 /* LoginFactory.swift in Sources */,
 				6194955026CE08AD00FA7A2D /* UIColorExtension.swift in Sources */,
 				613B0A2226CDA75900451BA2 /* LoginViewController.swift in Sources */,
+				6125783D26CED55100653CB5 /* Localization.swift in Sources */,
 				61C15EC726CEC46E00162D38 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,12 +495,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6155E60326CC139400078289 /* LaunchScreen.storyboard */ = {
+		6125783926CED18000653CB5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6155E60426CC139400078289 /* Base */,
+				6125783A26CED18000653CB5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		61C15ECE26CECFA000162D38 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61C15ECD26CECFA000162D38 /* en */,
+				61C15ED226CED09A00162D38 /* pt-BR */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -500,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -561,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

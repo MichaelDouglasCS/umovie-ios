@@ -1,3 +1,4 @@
+## XCAssets
 xcassets:
   - inputs:
       - uMovie/Resources/Assets.xcassets
@@ -7,3 +8,14 @@ xcassets:
       forceProvidesNamespaces: true
       forceFileNameEnum: true
       output: uMovie/Sources/Shared/Generated/Assets.swift
+
+## Localizable Strings
+strings:
+  - inputs:
+      - uMovie/Resources/en.lproj/Localizable.strings
+    outputs:
+      - templateName: structured-swift5
+        params:
+          publicAccess: true
+          enumName: Localization
+        output: uMovie/Sources/Shared/Generated/Localization.swift

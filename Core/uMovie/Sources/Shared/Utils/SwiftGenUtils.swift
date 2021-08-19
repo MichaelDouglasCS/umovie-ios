@@ -4,9 +4,9 @@ import UIKit
 typealias Images = Asset.Assets
 typealias Colors = Asset.Colors
 
-struct Font {
+struct Fonts {
 
-    static func system(
+    static func defaultSystem(
         withSize size: CGFloat,
         weight: UIFont.Weight = .regular,
         design: UIFontDescriptor.SystemDesign = .default
