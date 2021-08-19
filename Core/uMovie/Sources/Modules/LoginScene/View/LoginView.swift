@@ -23,17 +23,18 @@ final class LoginView: UIView {
 
     private struct Configuration {
         static let brandSpacing: CGFloat = 8
+        static let padding: CGFloat = 30
     }
 
     // MARK: - View Properties
 
     private lazy var brandImageView: UIImageView = {
-        let imageView = UIImageView(image: Image.uMovieLogo)
+        let imageView = UIImageView(image: Image.brandIcon)
         return imageView
     }()
 
     private lazy var brandNameLabel: UILabel = {
-        let label = UILabel(frame: .zero)
+        let label = UILabel()
         label.textAlignment = .center
 
         let font = Font.system(withSize: 55, weight: .regular, design: .rounded)
@@ -53,9 +54,29 @@ final class LoginView: UIView {
         return stackView
     }()
 
+    private lazy var brandIllustrationImageView: UIImageView = {
+        let imageView = UIImageView(image: Image.brandIllustration)
+        return imageView
+    }()
+
+    private lazy var continueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Como deseja continuar?"
+        label.font = Font.system(withSize: 17.0)
+        label.textColor = Color.subtitleColor
+        return label
+    }()
+
+    private lazy var continueWithAppleButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Continuar com a Apple", for: .normal)
+        button.setImage(Image.appleIcon, for: .normal)
+        return button
+    }()
+
     // MARK: - Private Properties
 
-    private var delegate: LoginDisplayDelegate?
+    private weak var delegate: LoginDisplayDelegate?
 
     // MARK: - Initializers
 
@@ -74,12 +95,13 @@ extension LoginView {
 
     private func setupUI() {
         backgroundColor = Color.backgroundColor
-
         setupBrandContraints()
+        setupContinueLabelConstraints()
     }
 
     private func setupBrandContraints() {
         addSubview(brandStackView)
+        addSubview(brandIllustrationImageView)
 
         brandImageView.snp.makeConstraints { make in
             make.width.equalTo(130)
@@ -88,8 +110,23 @@ extension LoginView {
 
         brandStackView.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide).offset(30)
-            make.leading.equalTo(self).offset(30)
-            make.trailing.equalTo(self).offset(-30)
+            make.leading.equalTo(self).offset(Configuration.padding)
+            make.trailing.equalTo(self).offset(-Configuration.padding)
+        }
+
+        brandIllustrationImageView.snp.makeConstraints { make in
+            make.center.equalTo(self)
+            make.width.equalTo(241)
+            make.height.equalTo(230)
+        }
+    }
+
+    private func setupContinueLabelConstraints() {
+        addSubview(continueLabel)
+
+        continueLabel.snp.makeConstraints { make in
+            make.centerX.equalTo(self)
+            make.top.equalTo(brandIllustrationImageView.snp.bottom).offset(Configuration.padding)
         }
     }
 }
