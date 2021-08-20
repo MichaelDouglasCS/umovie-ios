@@ -28,15 +28,14 @@ internal enum Asset {
     internal static let brandIllustration = ImageAsset(name: "brand-illustration")
   }
   internal enum Colors {
-    internal static let baseColor = ColorAsset(name: "baseColor")
-    internal static let offColor = ColorAsset(name: "offColor")
-    internal static let separatorColor = ColorAsset(name: "separatorColor")
+    internal static let darkBaseColor = ColorAsset(name: "darkBaseColor")
+    internal static let darkGrayColor = ColorAsset(name: "darkGrayColor")
+    internal static let lightBaseColor = ColorAsset(name: "lightBaseColor")
+    internal static let lightGrayColor = ColorAsset(name: "lightGrayColor")
     internal static let brandColor = ColorAsset(name: "brandColor")
     internal static let facebookColor = ColorAsset(name: "facebookColor")
     internal static let primaryTextColor = ColorAsset(name: "primaryTextColor")
     internal static let secondaryTextColor = ColorAsset(name: "secondaryTextColor")
-    internal static let subtitleTextColor = ColorAsset(name: "subtitleTextColor")
-    internal static let tertiaryTextColor = ColorAsset(name: "tertiaryTextColor")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

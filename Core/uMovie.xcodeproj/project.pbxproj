@@ -15,6 +15,7 @@
 		613B0A2226CDA75900451BA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2126CDA75900451BA2 /* LoginViewController.swift */; };
 		613B0A2426CDADC400451BA2 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2326CDADC400451BA2 /* LoginFactory.swift */; };
 		613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */; };
+		613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B268126CF50990096A4F8 /* UIFontExtensions.swift */; };
 		6155E5F926CC139300078289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E5F826CC139300078289 /* AppDelegate.swift */; };
 		6155E60226CC139400078289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60126CC139400078289 /* Assets.xcassets */; };
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
@@ -46,6 +47,7 @@
 		613B0A2126CDA75900451BA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		613B0A2326CDADC400451BA2 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
 		613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGenUtils.swift; sourceTree = "<group>"; };
+		613B268126CF50990096A4F8 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		6155E5F526CC139300078289 /* uMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E5F826CC139300078289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6155E60126CC139400078289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				6125784226CF373E00653CB5 /* UIImageExtensions.swift */,
+				613B268126CF50990096A4F8 /* UIFontExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			files = (
 				6187232626CD782000BE2EA3 /* LoginView.swift in Sources */,
 				6155E5F926CC139300078289 /* AppDelegate.swift in Sources */,
+				613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */,
 				6125784126CEFA3E00653CB5 /* CustomActionButton.swift in Sources */,
 				613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */,
 				613B0A2426CDADC400451BA2 /* LoginFactory.swift in Sources */,

@@ -14,11 +14,6 @@ protocol LoginDisplay: UIView {
 
 final class LoginView: UIView {
 
-    private struct Configuration {
-        static let brandSpacing: CGFloat = 8
-        static let padding: CGFloat = 30
-    }
-
     // MARK: - View Properties
 
     private lazy var brandImageView: UIImageView = {
@@ -28,13 +23,12 @@ final class LoginView: UIView {
 
     private lazy var brandNameLabel: UILabel = {
         let label = UILabel()
-        label.textAlignment = .center
-
         let title = Localization.Brand.title
-        let font = Fonts.defaultSystem(withSize: 55, weight: .regular, design: .rounded)
+        let font: UIFont = .defaultSystem(withSize: 55, weight: .regular)
         let attributedString = NSMutableAttributedString(string: title, attributes: [NSAttributedString.Key.font: font])
         attributedString.addAttributes([NSAttributedString.Key.foregroundColor: Colors.brandColor.color], range: .init(location: 0, length: 1))
 
+        label.textAlignment = .center
         label.attributedText = attributedString
         return label
     }()
@@ -44,7 +38,7 @@ final class LoginView: UIView {
         stackView.axis = .horizontal
         stackView.alignment = .center
         stackView.distribution = .fill
-        stackView.spacing = Configuration.brandSpacing
+        stackView.spacing = 16
         return stackView
     }()
 
@@ -56,19 +50,19 @@ final class LoginView: UIView {
     private lazy var continueLabel: UILabel = {
         let label = UILabel()
         label.text = Localization.Login.ContinueOption.title
-        label.font = Fonts.defaultSystem(withSize: 16.0)
-        label.textColor = Colors.subtitleTextColor.color
+        label.font = .defaultSystem(withSize: 16.0)
+        label.textColor = Colors.primaryTextColor.color
         return label
     }()
 
     private lazy var continueWithAppleButton: CustomActionButton = {
         let button = CustomActionButton()
         button.setTitle(Localization.Login.ContinueOption.apple, for: .normal)
-        button.setTitleColor(Colors.offColor.color, for: .normal)
+        button.setTitleColor(Colors.lightBaseColor.color, for: .normal)
         button.setImage(Images.appleIcon.image.resizeImage(to: .init(width: 18, height: 22)), for: .normal)
         button.imageEdgeInsets = .init(top: 12, left: 14, bottom: 12, right: .zero)
         button.addTarget(self, action: #selector(didTouchContinueWithAppleButton), for: .touchUpInside)
-        button.tintColor = Colors.offColor.color
+        button.tintColor = Colors.lightBaseColor.color
         button.isEnabled = true
         return button
     }()
@@ -87,10 +81,14 @@ final class LoginView: UIView {
         return button
     }()
 
-    private lazy var continueWithEmailButton: UIButton = {
-        let button = UIButton()
-        button.titleLabel?.font = Fonts.defaultSystem(withSize: 17.0, weight: .semibold)
+    private lazy var continueWithEmailButton: CustomActionButton = {
+        let button = CustomActionButton()
         button.setTitle(Localization.Login.ContinueOption.email, for: .normal)
+        button.setTitleColor(Colors.primaryTextColor.color, for: .normal)
+        button.addTarget(self, action: #selector(didTouchContinueWithEmailButton), for: .touchUpInside)
+        button.loadingColor = Colors.darkGrayColor.color
+        button.enabledBackgroundColor = Colors.lightGrayColor.color
+        button.isEnabled = true
         return button
     }()
 
@@ -119,16 +117,16 @@ final class LoginView: UIView {
 
     // MARK: - Actions
 
-    @objc private func didTouchContinueWithAppleButton() {
-        continueWithAppleButton.isLoading = !continueWithAppleButton.isLoading
+    @objc private func didTouchContinueWithAppleButton(_ sender: CustomActionButton) {
+        delegate?.didTouchContinueWithApple()
     }
 
-    @objc private func didTouchContinueWithFacebookButton() {
-
+    @objc private func didTouchContinueWithFacebookButton(_ sender: CustomActionButton) {
+        delegate?.didTouchContinueWithFacebook()
     }
 
-    private func didTouchContinueWithEmailButton() {
-
+    @objc private func didTouchContinueWithEmailButton(_ sender: CustomActionButton) {
+        delegate?.didTouchContinueWithEmail()
     }
 }
 
@@ -137,7 +135,7 @@ final class LoginView: UIView {
 extension LoginView {
 
     private func setupUI() {
-        backgroundColor = Colors.offColor.color
+        backgroundColor = Colors.lightBaseColor.color
         setupBrandContraints()
         setupContinueOptionsConstraints()
     }
@@ -152,15 +150,16 @@ extension LoginView {
         }
 
         brandStackView.snp.makeConstraints { make in
-            make.top.equalTo(self.safeAreaLayoutGuide).offset(30)
-            make.leading.equalTo(self).offset(Configuration.padding)
-            make.trailing.equalTo(self).offset(-Configuration.padding)
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(20)
+            make.leading.greaterThanOrEqualTo(self).offset(16)
+            make.trailing.lessThanOrEqualTo(self).offset(-16)
+            make.centerX.equalTo(self)
         }
 
         brandIllustrationImageView.snp.makeConstraints { make in
-            make.center.equalTo(self)
             make.width.equalTo(241)
             make.height.equalTo(230)
+            make.centerX.equalTo(self)
         }
     }
 
@@ -169,14 +168,15 @@ extension LoginView {
         addSubview(continueOptionsStackView)
 
         continueLabel.snp.makeConstraints { make in
+            make.top.equalTo(brandIllustrationImageView.snp.bottom).offset(30)
             make.centerX.equalTo(self)
-            make.top.equalTo(brandIllustrationImageView.snp.bottom).offset(Configuration.padding)
         }
 
         continueOptionsStackView.snp.makeConstraints { make in
             make.top.equalTo(continueLabel.snp.bottom).offset(16)
-            make.centerX.equalTo(self)
+            make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-20)
             make.width.equalTo(300)
+            make.centerX.equalTo(self)
         }
 
         continueWithAppleButton.snp.makeConstraints({ $0.height.equalTo(48) })

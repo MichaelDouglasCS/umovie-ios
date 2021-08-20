@@ -24,7 +24,7 @@ public enum Localization {
       public static let email = Localization.tr("Localizable", "Login.ContinueOption.Email")
       /// Continue with Facebook
       public static let facebook = Localization.tr("Localizable", "Login.ContinueOption.Facebook")
-      /// How would you like continue?
+      /// How would you like to continue?
       public static let title = Localization.tr("Localizable", "Login.ContinueOption.Title")
     }
   }

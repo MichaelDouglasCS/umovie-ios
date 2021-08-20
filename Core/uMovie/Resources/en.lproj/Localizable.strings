@@ -2,7 +2,7 @@
 "Brand.title" = "uMovie";
 
 // LOGIN
-"Login.ContinueOption.Title" = "How would you like continue?";
+"Login.ContinueOption.Title" = "How would you like to continue?";
 "Login.ContinueOption.Apple" = "Continue with Apple";
 "Login.ContinueOption.Facebook" = "Continue with Facebook";
 "Login.ContinueOption.Email" = "Email";

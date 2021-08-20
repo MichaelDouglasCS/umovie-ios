@@ -6,12 +6,12 @@ class CustomActionButton: UIButton {
 
     // MARK: - Internal Properties
 
-    var enabledBackgroundColor: UIColor = Colors.baseColor.color
+    var enabledBackgroundColor: UIColor = Colors.darkBaseColor.color
     var disabledBackgroundColor: UIColor?
     var cornerRadius: CGFloat = 24.0
     var fontSize: CGFloat = 17.0
-    var fontWeight: UIFont.Weight = .semibold
-    var loadingColor: UIColor = Colors.offColor.color
+    var fontWeight: UIFont.Weight = .medium
+    var loadingColor: UIColor = Colors.lightBaseColor.color
 
     lazy var loadingView: UIActivityIndicatorView = {
         let loading = UIActivityIndicatorView(style: .medium)
@@ -68,10 +68,9 @@ class CustomActionButton: UIButton {
         layer.cornerRadius = cornerRadius
         layer.masksToBounds = true
         titleLabel?.textAlignment = .center
-        titleLabel?.font = Fonts.defaultSystem(withSize: fontSize, weight: fontWeight)
+        titleLabel?.font = .defaultSystem(withSize: fontSize, weight: fontWeight)
         adjustsImageWhenHighlighted = false
 
-        // force enabled state
         let enabled = isEnabled
         isEnabled = enabled
     }

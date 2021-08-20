@@ -2,13 +2,21 @@
   "colors" : [
     {
       "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.651",
-          "green" : "0.651",
-          "red" : "0.651"
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
         }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "tertiaryLabelColor"
       },
       "idiom" : "universal"
     }
