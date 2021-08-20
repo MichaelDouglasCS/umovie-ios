@@ -10,7 +10,7 @@ class CustomActionButton: UIButton {
     var disabledBackgroundColor: UIColor?
     var cornerRadius: CGFloat = 24.0
     var fontSize: CGFloat = 17.0
-    var fontWeight: UIFont.Weight = .medium
+    var fontWeight: UIFont.Weight = .semibold
     var loadingColor: UIColor = Colors.lightBaseColor.color
 
     lazy var loadingView: UIActivityIndicatorView = {
@@ -50,14 +50,14 @@ class CustomActionButton: UIButton {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-
         contentMode = .scaleToFill
-
         contentHorizontalAlignment = .left
+
         let availableSpace = bounds.inset(by: contentEdgeInsets)
         let imageViewWidth = imageView?.frame.width ?? .zero
         let titleLabelWidth = titleLabel?.frame.width ?? .zero
         let availableWidth = availableSpace.width - imageEdgeInsets.right - imageViewWidth - titleLabelWidth
+
         titleEdgeInsets = UIEdgeInsets(top: .zero, left: availableWidth / 2, bottom: .zero, right: .zero)
     }
 
@@ -65,8 +65,8 @@ class CustomActionButton: UIButton {
 
     private func setupUI() {
         addSubview(loadingView)
-        layer.cornerRadius = cornerRadius
         layer.masksToBounds = true
+        layer.cornerRadius = cornerRadius
         titleLabel?.textAlignment = .center
         titleLabel?.font = .defaultSystem(withSize: fontSize, weight: fontWeight)
         adjustsImageWhenHighlighted = false
