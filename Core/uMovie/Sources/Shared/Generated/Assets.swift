@@ -23,14 +23,20 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Assets {
     internal static let appleIcon = ImageAsset(name: "apple-icon")
+    internal static let facebookIcon = ImageAsset(name: "facebook-icon")
     internal static let umovieIcon = ImageAsset(name: "umovie-icon")
     internal static let brandIllustration = ImageAsset(name: "brand-illustration")
   }
   internal enum Colors {
-    internal static let accentColor = ColorAsset(name: "AccentColor")
-    internal static let backgroundColor = ColorAsset(name: "backgroundColor")
+    internal static let baseColor = ColorAsset(name: "baseColor")
+    internal static let offColor = ColorAsset(name: "offColor")
+    internal static let separatorColor = ColorAsset(name: "separatorColor")
     internal static let brandColor = ColorAsset(name: "brandColor")
-    internal static let subtitleColor = ColorAsset(name: "subtitleColor")
+    internal static let facebookColor = ColorAsset(name: "facebookColor")
+    internal static let primaryTextColor = ColorAsset(name: "primaryTextColor")
+    internal static let secondaryTextColor = ColorAsset(name: "secondaryTextColor")
+    internal static let subtitleTextColor = ColorAsset(name: "subtitleTextColor")
+    internal static let tertiaryTextColor = ColorAsset(name: "tertiaryTextColor")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

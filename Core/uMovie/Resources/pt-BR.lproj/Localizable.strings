@@ -1,2 +1,8 @@
+// BRAND
+"Brand.uMovie.title" = "uMovie";
+
 // LOGIN
 "Login.ContinueOption.Title" = "Como deseja continuar?";
+"Login.ContinueOption.Apple" = "Continuar com a Apple";
+"Login.ContinueOption.Facebook" = "Continuar com Facebook";
+"Login.ContinueOption.Email" = "Email";
