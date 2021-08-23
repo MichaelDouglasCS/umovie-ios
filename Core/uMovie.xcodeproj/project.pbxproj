@@ -20,6 +20,7 @@
 		6155E60226CC139400078289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60126CC139400078289 /* Assets.xcassets */; };
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
 		6187232626CD782000BE2EA3 /* LoginOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187232526CD782000BE2EA3 /* LoginOptionsView.swift */; };
+		61B9286B26D416D7002DF4CA /* LoginEmailAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9286A26D416D7002DF4CA /* LoginEmailAuthView.swift */; };
 		61C15EC726CEC46E00162D38 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C15EC626CEC46E00162D38 /* Assets.swift */; };
 		61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C15EC826CEC65B00162D38 /* Colors.xcassets */; };
 		61C15ECC26CECFA000162D38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C15ECE26CECFA000162D38 /* Localizable.strings */; };
@@ -56,6 +57,7 @@
 		6155E60F26CC139400078289 /* uMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMovieTests.swift; sourceTree = "<group>"; };
 		6155E61126CC139400078289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6187232526CD782000BE2EA3 /* LoginOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsView.swift; sourceTree = "<group>"; };
+		61B9286A26D416D7002DF4CA /* LoginEmailAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthView.swift; sourceTree = "<group>"; };
 		61C15EC626CEC46E00162D38 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		61C15EC826CEC65B00162D38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		61C15ECD26CECFA000162D38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -217,22 +219,47 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		61F8D34D26CC6F2100DF04A2 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				61F8D34E26CC6F2600DF04A2 /* LoginOptionsScene */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		61F8D34E26CC6F2600DF04A2 /* LoginOptionsScene */ = {
+		61B9286726D41567002DF4CA /* OptionsScene */ = {
 			isa = PBXGroup;
 			children = (
 				6187232426CD778800BE2EA3 /* View */,
 				613B0A2126CDA75900451BA2 /* LoginOptionsViewController.swift */,
 				613B0A2326CDADC400451BA2 /* LoginOptionsFactory.swift */,
 			);
-			path = LoginOptionsScene;
+			path = OptionsScene;
+			sourceTree = "<group>";
+		};
+		61B9286826D415AA002DF4CA /* EmailAuthScene */ = {
+			isa = PBXGroup;
+			children = (
+				61B9286926D415DE002DF4CA /* View */,
+			);
+			path = EmailAuthScene;
+			sourceTree = "<group>";
+		};
+		61B9286926D415DE002DF4CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61B9286A26D416D7002DF4CA /* LoginEmailAuthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61F8D34D26CC6F2100DF04A2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				61F8D34E26CC6F2600DF04A2 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		61F8D34E26CC6F2600DF04A2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				61B9286826D415AA002DF4CA /* EmailAuthScene */,
+				61B9286726D41567002DF4CA /* OptionsScene */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		61F8D34F26CC6F6500DF04A2 /* Sources */ = {
@@ -491,6 +518,7 @@
 				6155E5F926CC139300078289 /* AppDelegate.swift in Sources */,
 				613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */,
 				6125784126CEFA3E00653CB5 /* CustomActionButton.swift in Sources */,
+				61B9286B26D416D7002DF4CA /* LoginEmailAuthView.swift in Sources */,
 				613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */,
 				613B0A2426CDADC400451BA2 /* LoginOptionsFactory.swift in Sources */,
 				613B0A2226CDA75900451BA2 /* LoginOptionsViewController.swift in Sources */,
