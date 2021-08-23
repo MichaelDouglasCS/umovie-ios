@@ -20,12 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Private Methods
 
     private func setupWindow() {
-
         self.window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = self.window else { return }
 
-        let loginOptionsView = LoginOptionsFactory().make()
-        window.rootViewController = loginOptionsView
+        let loginOptionsViewController = LoginOptionsFactory().make()
+        let navigationViewController = UINavigationController(rootViewController: loginOptionsViewController)
+
+        window.rootViewController = navigationViewController
         window.makeKeyAndVisible()
     }
 }

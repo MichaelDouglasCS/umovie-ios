@@ -5,13 +5,16 @@ final class LoginOptionsViewController: UIViewController {
 
     // MARK: - Private Properties
 
+    private let router: LoginOptionsRoutingLogic
     private let customView: LoginOptionsDisplay
 
     // MARK: - Initializers
 
     init(
+        router: LoginOptionsRoutingLogic,
         view: LoginOptionsDisplay
     ) {
+        self.router = router
         self.customView = view
         super.init(nibName: nil, bundle: nil)
     }
@@ -25,6 +28,16 @@ final class LoginOptionsViewController: UIViewController {
         view = customView
         customView.configure(with: self)
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 }
 
 // MARK: - LoginDisplayDelegate
@@ -32,14 +45,14 @@ final class LoginOptionsViewController: UIViewController {
 extension LoginOptionsViewController: LoginOptionsDisplayDelegate {
 
     func didTouchContinueWithApple() {
-
+        router.presentAppleAuthentication()
     }
 
     func didTouchContinueWithFacebook() {
-
+        router.presentFacebookAuthentication()
     }
 
     func didTouchContinueWithEmail() {
-
+        router.presentEmailAuthentication()
     }
 }

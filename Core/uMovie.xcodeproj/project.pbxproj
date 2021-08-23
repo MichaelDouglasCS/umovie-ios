@@ -24,6 +24,10 @@
 		61C15EC726CEC46E00162D38 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C15EC626CEC46E00162D38 /* Assets.swift */; };
 		61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C15EC826CEC65B00162D38 /* Colors.xcassets */; };
 		61C15ECC26CECFA000162D38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C15ECE26CECFA000162D38 /* Localizable.strings */; };
+		61F8D51526D42D7600F78552 /* LoginEmailAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51426D42D7600F78552 /* LoginEmailAuthViewController.swift */; };
+		61F8D51726D4431000F78552 /* LoginOptionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51626D4431000F78552 /* LoginOptionsRouter.swift */; };
+		61F8D51A26D44ABB00F78552 /* LoginEmailAuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51926D44ABB00F78552 /* LoginEmailAuthFactory.swift */; };
+		61F8D51C26D44B3500F78552 /* LoginEmailAuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51B26D44B3500F78552 /* LoginEmailAuthRouter.swift */; };
 		DD497C3107091B3B06071D67 /* Pods_uMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E636327A7618528BEDEE861 /* Pods_uMovie.framework */; };
 		E860CCF66FC7C222F53C16E9 /* Pods_uMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29AA45A2448B676B8218B91 /* Pods_uMovieTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +66,10 @@
 		61C15EC826CEC65B00162D38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		61C15ECD26CECFA000162D38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		61C15ED226CED09A00162D38 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		61F8D51426D42D7600F78552 /* LoginEmailAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthViewController.swift; sourceTree = "<group>"; };
+		61F8D51626D4431000F78552 /* LoginOptionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsRouter.swift; sourceTree = "<group>"; };
+		61F8D51926D44ABB00F78552 /* LoginEmailAuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthFactory.swift; sourceTree = "<group>"; };
+		61F8D51B26D44B3500F78552 /* LoginEmailAuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthRouter.swift; sourceTree = "<group>"; };
 		87E50DA0AD8FF654ECEC9104 /* Pods-uMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-uMovieTests/Pods-uMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E636327A7618528BEDEE861 /* Pods_uMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3848F22310F281EAB021FC7 /* Pods-uMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uMovie.release.xcconfig"; path = "Target Support Files/Pods-uMovie/Pods-uMovie.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,9 +230,10 @@
 		61B9286726D41567002DF4CA /* OptionsScene */ = {
 			isa = PBXGroup;
 			children = (
-				6187232426CD778800BE2EA3 /* View */,
-				613B0A2126CDA75900451BA2 /* LoginOptionsViewController.swift */,
 				613B0A2326CDADC400451BA2 /* LoginOptionsFactory.swift */,
+				61F8D51626D4431000F78552 /* LoginOptionsRouter.swift */,
+				613B0A2126CDA75900451BA2 /* LoginOptionsViewController.swift */,
+				6187232426CD778800BE2EA3 /* View */,
 			);
 			path = OptionsScene;
 			sourceTree = "<group>";
@@ -232,6 +241,9 @@
 		61B9286826D415AA002DF4CA /* EmailAuthScene */ = {
 			isa = PBXGroup;
 			children = (
+				61F8D51926D44ABB00F78552 /* LoginEmailAuthFactory.swift */,
+				61F8D51B26D44B3500F78552 /* LoginEmailAuthRouter.swift */,
+				61F8D51426D42D7600F78552 /* LoginEmailAuthViewController.swift */,
 				61B9286926D415DE002DF4CA /* View */,
 			);
 			path = EmailAuthScene;
@@ -517,14 +529,18 @@
 				6187232626CD782000BE2EA3 /* LoginOptionsView.swift in Sources */,
 				6155E5F926CC139300078289 /* AppDelegate.swift in Sources */,
 				613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */,
+				61F8D51A26D44ABB00F78552 /* LoginEmailAuthFactory.swift in Sources */,
 				6125784126CEFA3E00653CB5 /* CustomActionButton.swift in Sources */,
 				61B9286B26D416D7002DF4CA /* LoginEmailAuthView.swift in Sources */,
 				613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */,
 				613B0A2426CDADC400451BA2 /* LoginOptionsFactory.swift in Sources */,
+				61F8D51526D42D7600F78552 /* LoginEmailAuthViewController.swift in Sources */,
 				613B0A2226CDA75900451BA2 /* LoginOptionsViewController.swift in Sources */,
 				6125784326CF373E00653CB5 /* UIImageExtensions.swift in Sources */,
 				6125783D26CED55100653CB5 /* Localization.swift in Sources */,
 				61C15EC726CEC46E00162D38 /* Assets.swift in Sources */,
+				61F8D51726D4431000F78552 /* LoginOptionsRouter.swift in Sources */,
+				61F8D51C26D44B3500F78552 /* LoginEmailAuthRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

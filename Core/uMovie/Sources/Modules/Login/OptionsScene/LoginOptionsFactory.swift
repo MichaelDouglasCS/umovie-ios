@@ -4,10 +4,11 @@ import UIKit
 struct LoginOptionsFactory {
 
     func make() -> UIViewController {
+        let router = LoginOptionsRouter()
         let view = LoginOptionsView()
-        let viewController = LoginOptionsViewController(view: view)
-        let navigationViewController = UINavigationController(rootViewController: viewController)
-        navigationViewController.setNavigationBarHidden(true, animated: false)
-        return navigationViewController
+        let viewController = LoginOptionsViewController(router: router, view: view)
+
+        router.presentedViewController = viewController
+        return viewController
     }
 }

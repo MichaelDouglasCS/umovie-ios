@@ -16,6 +16,24 @@ final class LoginEmailAuthView: UIView {
 
     private weak var delegate: LoginEmailAuthDisplayDelegate?
 
+    // MARK: - Initializers
+
+    init() {
+        super.init(frame: .zero)
+        setupUI()
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) { nil }
+}
+
+// MARK: - Setup Constraints
+
+extension LoginEmailAuthView {
+
+    private func setupUI() {
+        backgroundColor = .red
+    }
 }
 
 // MARK: - LoginEmailAuthDisplay
