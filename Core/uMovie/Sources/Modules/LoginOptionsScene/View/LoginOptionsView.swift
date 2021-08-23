@@ -2,17 +2,17 @@ import Foundation
 import SnapKit
 import UIKit
 
-protocol LoginDisplayDelegate: AnyObject {
+protocol LoginOptionsDisplayDelegate: AnyObject {
     func didTouchContinueWithApple()
     func didTouchContinueWithFacebook()
     func didTouchContinueWithEmail()
 }
 
-protocol LoginDisplay: UIView {
-    func configure(with delegate: LoginDisplayDelegate)
+protocol LoginOptionsDisplay: UIView {
+    func configure(with delegate: LoginOptionsDisplayDelegate)
 }
 
-final class LoginView: UIView {
+final class LoginOptionsView: UIView {
 
     // MARK: - View Properties
 
@@ -103,7 +103,7 @@ final class LoginView: UIView {
 
     // MARK: - Private Properties
 
-    private weak var delegate: LoginDisplayDelegate?
+    private weak var delegate: LoginOptionsDisplayDelegate?
 
     // MARK: - Initializers
 
@@ -132,7 +132,7 @@ final class LoginView: UIView {
 
 // MARK: - Setup Constraints
 
-extension LoginView {
+extension LoginOptionsView {
 
     private func setupUI() {
         backgroundColor = Colors.lightBaseColor.color
@@ -185,9 +185,9 @@ extension LoginView {
 
 // MARK: - LoginViewDisplayProtocol
 
-extension LoginView: LoginDisplay {
+extension LoginOptionsView: LoginOptionsDisplay {
 
-    func configure(with delegate: LoginDisplayDelegate) {
+    func configure(with delegate: LoginOptionsDisplayDelegate) {
         self.delegate = delegate
     }
 }

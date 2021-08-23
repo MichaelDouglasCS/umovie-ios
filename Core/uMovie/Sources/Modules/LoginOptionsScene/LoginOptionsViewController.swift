@@ -1,16 +1,16 @@
 import Foundation
 import UIKit
 
-final class LoginViewController: UIViewController {
+final class LoginOptionsViewController: UIViewController {
 
     // MARK: - Private Properties
 
-    private let customView: LoginDisplay
+    private let customView: LoginOptionsDisplay
 
     // MARK: - Initializers
 
     init(
-        view: LoginDisplay
+        view: LoginOptionsDisplay
     ) {
         self.customView = view
         super.init(nibName: nil, bundle: nil)
@@ -29,7 +29,7 @@ final class LoginViewController: UIViewController {
 
 // MARK: - LoginDisplayDelegate
 
-extension LoginViewController: LoginDisplayDelegate {
+extension LoginOptionsViewController: LoginOptionsDisplayDelegate {
 
     func didTouchContinueWithApple() {
 

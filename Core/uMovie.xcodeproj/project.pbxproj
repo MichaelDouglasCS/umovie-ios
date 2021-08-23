@@ -12,14 +12,14 @@
 		6125783D26CED55100653CB5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6125783C26CED55100653CB5 /* Localization.swift */; };
 		6125784126CEFA3E00653CB5 /* CustomActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6125784026CEFA3E00653CB5 /* CustomActionButton.swift */; };
 		6125784326CF373E00653CB5 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6125784226CF373E00653CB5 /* UIImageExtensions.swift */; };
-		613B0A2226CDA75900451BA2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2126CDA75900451BA2 /* LoginViewController.swift */; };
-		613B0A2426CDADC400451BA2 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2326CDADC400451BA2 /* LoginFactory.swift */; };
+		613B0A2226CDA75900451BA2 /* LoginOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2126CDA75900451BA2 /* LoginOptionsViewController.swift */; };
+		613B0A2426CDADC400451BA2 /* LoginOptionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2326CDADC400451BA2 /* LoginOptionsFactory.swift */; };
 		613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */; };
 		613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B268126CF50990096A4F8 /* UIFontExtensions.swift */; };
 		6155E5F926CC139300078289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E5F826CC139300078289 /* AppDelegate.swift */; };
 		6155E60226CC139400078289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60126CC139400078289 /* Assets.xcassets */; };
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
-		6187232626CD782000BE2EA3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187232526CD782000BE2EA3 /* LoginView.swift */; };
+		6187232626CD782000BE2EA3 /* LoginOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187232526CD782000BE2EA3 /* LoginOptionsView.swift */; };
 		61C15EC726CEC46E00162D38 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C15EC626CEC46E00162D38 /* Assets.swift */; };
 		61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C15EC826CEC65B00162D38 /* Colors.xcassets */; };
 		61C15ECC26CECFA000162D38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C15ECE26CECFA000162D38 /* Localizable.strings */; };
@@ -44,8 +44,8 @@
 		6125783C26CED55100653CB5 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		6125784026CEFA3E00653CB5 /* CustomActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionButton.swift; sourceTree = "<group>"; };
 		6125784226CF373E00653CB5 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		613B0A2126CDA75900451BA2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		613B0A2326CDADC400451BA2 /* LoginFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFactory.swift; sourceTree = "<group>"; };
+		613B0A2126CDA75900451BA2 /* LoginOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsViewController.swift; sourceTree = "<group>"; };
+		613B0A2326CDADC400451BA2 /* LoginOptionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsFactory.swift; sourceTree = "<group>"; };
 		613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGenUtils.swift; sourceTree = "<group>"; };
 		613B268126CF50990096A4F8 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		6155E5F526CC139300078289 /* uMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +55,7 @@
 		6155E60B26CC139400078289 /* uMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E60F26CC139400078289 /* uMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uMovieTests.swift; sourceTree = "<group>"; };
 		6155E61126CC139400078289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6187232526CD782000BE2EA3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6187232526CD782000BE2EA3 /* LoginOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsView.swift; sourceTree = "<group>"; };
 		61C15EC626CEC46E00162D38 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		61C15EC826CEC65B00162D38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		61C15ECD26CECFA000162D38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		6187232426CD778800BE2EA3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6187232526CD782000BE2EA3 /* LoginView.swift */,
+				6187232526CD782000BE2EA3 /* LoginOptionsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,19 +220,19 @@
 		61F8D34D26CC6F2100DF04A2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				61F8D34E26CC6F2600DF04A2 /* LoginScene */,
+				61F8D34E26CC6F2600DF04A2 /* LoginOptionsScene */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		61F8D34E26CC6F2600DF04A2 /* LoginScene */ = {
+		61F8D34E26CC6F2600DF04A2 /* LoginOptionsScene */ = {
 			isa = PBXGroup;
 			children = (
 				6187232426CD778800BE2EA3 /* View */,
-				613B0A2126CDA75900451BA2 /* LoginViewController.swift */,
-				613B0A2326CDADC400451BA2 /* LoginFactory.swift */,
+				613B0A2126CDA75900451BA2 /* LoginOptionsViewController.swift */,
+				613B0A2326CDADC400451BA2 /* LoginOptionsFactory.swift */,
 			);
-			path = LoginScene;
+			path = LoginOptionsScene;
 			sourceTree = "<group>";
 		};
 		61F8D34F26CC6F6500DF04A2 /* Sources */ = {
@@ -487,13 +487,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6187232626CD782000BE2EA3 /* LoginView.swift in Sources */,
+				6187232626CD782000BE2EA3 /* LoginOptionsView.swift in Sources */,
 				6155E5F926CC139300078289 /* AppDelegate.swift in Sources */,
 				613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */,
 				6125784126CEFA3E00653CB5 /* CustomActionButton.swift in Sources */,
 				613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */,
-				613B0A2426CDADC400451BA2 /* LoginFactory.swift in Sources */,
-				613B0A2226CDA75900451BA2 /* LoginViewController.swift in Sources */,
+				613B0A2426CDADC400451BA2 /* LoginOptionsFactory.swift in Sources */,
+				613B0A2226CDA75900451BA2 /* LoginOptionsViewController.swift in Sources */,
 				6125784326CF373E00653CB5 /* UIImageExtensions.swift in Sources */,
 				6125783D26CED55100653CB5 /* Localization.swift in Sources */,
 				61C15EC726CEC46E00162D38 /* Assets.swift in Sources */,

@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         guard let window = self.window else { return }
 
-        let loginView = LoginFactory().make()
-        window.rootViewController = loginView
+        let loginOptionsView = LoginOptionsFactory().make()
+        window.rootViewController = loginOptionsView
         window.makeKeyAndVisible()
     }
 }
