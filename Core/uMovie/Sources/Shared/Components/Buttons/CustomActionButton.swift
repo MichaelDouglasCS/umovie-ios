@@ -41,6 +41,17 @@ class CustomActionButton: UIButton {
         }
     }
 
+    override var isHighlighted: Bool {
+        didSet {
+            UIView.animate(
+                withDuration: 0.25,
+                delay: .zero,
+                options: [.beginFromCurrentState, .allowUserInteraction],
+                animations: { self.alpha = self.isHighlighted ? 0.5 : 1 }
+            )
+        }
+    }
+
     // MARK: - Lifecycle
 
     override func draw(_ rect: CGRect) {

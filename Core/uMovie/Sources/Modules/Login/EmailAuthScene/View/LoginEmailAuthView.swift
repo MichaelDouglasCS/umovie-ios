@@ -32,7 +32,7 @@ final class LoginEmailAuthView: UIView {
 extension LoginEmailAuthView {
 
     private func setupUI() {
-        backgroundColor = .red
+        backgroundColor = Colors.lightBaseColor.color
     }
 }
 
