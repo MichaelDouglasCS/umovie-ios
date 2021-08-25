@@ -49,15 +49,15 @@ final class LoginOptionsView: UIView {
 
     private lazy var continueLabel: UILabel = {
         let label = UILabel()
-        label.text = Localization.Login.ContinueOption.title
-        label.font = .defaultSystem(withSize: 16.0)
+        label.text = Localization.Login.Options.title
+        label.font = .defaultSystem(withSize: 16)
         label.textColor = Colors.primaryTextColor.color
         return label
     }()
 
     private lazy var continueWithAppleButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setTitle(Localization.Login.ContinueOption.apple, for: .normal)
+        button.setTitle(Localization.Login.Options.apple, for: .normal)
         button.setTitleColor(Colors.lightBaseColor.color, for: .normal)
         button.setImage(Images.appleIcon.image.resizeImage(to: .init(width: 18, height: 22)), for: .normal)
         button.imageEdgeInsets = .init(top: 12, left: 14, bottom: 12, right: .zero)
@@ -69,7 +69,7 @@ final class LoginOptionsView: UIView {
 
     private lazy var continueWithFacebookButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setTitle(Localization.Login.ContinueOption.facebook, for: .normal)
+        button.setTitle(Localization.Login.Options.facebook, for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.setImage(Images.facebookIcon.image.resizeImage(to: .init(width: 12, height: 22)), for: .normal)
         button.imageEdgeInsets = .init(top: 12, left: 16, bottom: 12, right: .zero)
@@ -83,7 +83,7 @@ final class LoginOptionsView: UIView {
 
     private lazy var continueWithEmailButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setTitle(Localization.Login.ContinueOption.email, for: .normal)
+        button.setTitle(Localization.Login.Options.email, for: .normal)
         button.setTitleColor(Colors.primaryTextColor.color, for: .normal)
         button.addTarget(self, action: #selector(didTouchContinueWithEmailButton), for: .touchUpInside)
         button.loadingColor = Colors.darkGrayColor.color

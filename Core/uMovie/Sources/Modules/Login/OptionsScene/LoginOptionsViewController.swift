@@ -52,7 +52,6 @@ final class LoginOptionsViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.view.backgroundColor = .clear
-        navigationItem.backButtonTitle = ""
     }
 }
 

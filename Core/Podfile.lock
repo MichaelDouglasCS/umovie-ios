@@ -1,11 +1,13 @@
 PODS:
   - Alamofire (5.4.3)
+  - IQKeyboardManager (6.5.6)
   - Kingfisher (6.3.1)
   - SnapKit (5.0.1)
   - SwiftGen (6.4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
+  - IQKeyboardManager (~> 6.5)
   - Kingfisher (~> 6.0)
   - SnapKit (~> 5.0.0)
   - SwiftGen (~> 6.0)
@@ -13,16 +15,18 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - IQKeyboardManager
     - Kingfisher
     - SnapKit
     - SwiftGen
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
 
-PODFILE CHECKSUM: 22b4c26c324e64769d6576dc01993b32512e1963
+PODFILE CHECKSUM: 7f07a2f75c986e9be3790f6042dea97de8abe08d
 
 COCOAPODS: 1.10.0
