@@ -30,6 +30,7 @@ final class LoginEmailAuthView: UIView {
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
         textField.returnKeyType = .next
+        textField.clearButtonMode = .whileEditing
         textField.enablesReturnKeyAutomatically = true
         textField.placeholder = Localization.General.Email.title
         textField.tintColor = Colors.darkBaseColor.color
@@ -142,7 +143,7 @@ extension LoginEmailAuthView {
         addSubview(textFieldStackView)
 
         textFieldStackView.snp.makeConstraints { make in
-            make.top.equalTo(titleLabel.snp.bottom).offset(26)
+            make.top.equalTo(titleLabel.snp.bottom).offset(30)
             make.leading.equalTo(self).offset(16)
             make.trailing.equalTo(self).offset(-16)
         }
