@@ -28,6 +28,10 @@ final class LoginEmailAuthViewController: UIViewController {
         view = customView
         customView.configure(with: self)
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
 
 // MARK: - LoginDisplayDelegate
