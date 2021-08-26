@@ -16,33 +16,35 @@ public enum Localization {
     public static let title = Localization.tr("Localizable", "Brand.title")
   }
 
-  public enum Button {
+  public enum General {
     public enum Continue {
       /// Continue
-      public static let title = Localization.tr("Localizable", "Button.Continue.Title")
+      public static let title = Localization.tr("Localizable", "General.Continue.Title")
+    }
+    public enum CreateAccount {
+      /// Create account
+      public static let title = Localization.tr("Localizable", "General.CreateAccount.Title")
+    }
+    public enum Email {
+      /// Email
+      public static let title = Localization.tr("Localizable", "General.Email.title")
+    }
+    public enum Password {
+      /// Password
+      public static let title = Localization.tr("Localizable", "General.Password.title")
     }
   }
 
   public enum Login {
-    public enum CreateAccount {
-      /// Create account
-      public static let buttonTitle = Localization.tr("Localizable", "Login.CreateAccount.ButtonTitle")
-    }
     public enum EmailAuthentication {
-      /// Email
-      public static let emailTitle = Localization.tr("Localizable", "Login.EmailAuthentication.EmailTitle")
       /// Forgot my password
       public static let forgotMyPasswordTitle = Localization.tr("Localizable", "Login.EmailAuthentication.ForgotMyPasswordTitle")
-      /// Password
-      public static let passwordTitle = Localization.tr("Localizable", "Login.EmailAuthentication.PasswordTitle")
       /// What is your email and password?
       public static let title = Localization.tr("Localizable", "Login.EmailAuthentication.Title")
     }
     public enum Options {
       /// Continue with Apple
       public static let apple = Localization.tr("Localizable", "Login.Options.Apple")
-      /// Email
-      public static let email = Localization.tr("Localizable", "Login.Options.Email")
       /// Continue with Facebook
       public static let facebook = Localization.tr("Localizable", "Login.Options.Facebook")
       /// How would you like to continue?

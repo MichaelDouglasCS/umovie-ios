@@ -21,6 +21,7 @@
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
 		6187232626CD782000BE2EA3 /* LoginOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187232526CD782000BE2EA3 /* LoginOptionsView.swift */; };
 		61A5BF7626D714BA00AA1E97 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5BF7526D714BA00AA1E97 /* UIViewControllerExtensions.swift */; };
+		61A5BF8126D72D3800AA1E97 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5BF7B26D72D3700AA1E97 /* CustomTextField.swift */; };
 		61B9286B26D416D7002DF4CA /* LoginEmailAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B9286A26D416D7002DF4CA /* LoginEmailAuthView.swift */; };
 		61C15EC726CEC46E00162D38 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C15EC626CEC46E00162D38 /* Assets.swift */; };
 		61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C15EC826CEC65B00162D38 /* Colors.xcassets */; };
@@ -63,6 +64,7 @@
 		6155E61126CC139400078289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6187232526CD782000BE2EA3 /* LoginOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsView.swift; sourceTree = "<group>"; };
 		61A5BF7526D714BA00AA1E97 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		61A5BF7B26D72D3700AA1E97 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		61B9286A26D416D7002DF4CA /* LoginEmailAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthView.swift; sourceTree = "<group>"; };
 		61C15EC626CEC46E00162D38 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		61C15EC826CEC65B00162D38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		6125783E26CEF44A00653CB5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				61A5BF7726D72D1500AA1E97 /* TextFields */,
 				6125783F26CEF45E00653CB5 /* Buttons */,
 			);
 			path = Components;
@@ -223,11 +226,19 @@
 		6194954E26CE089D00FA7A2D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				6125784226CF373E00653CB5 /* UIImageExtensions.swift */,
 				613B268126CF50990096A4F8 /* UIFontExtensions.swift */,
+				6125784226CF373E00653CB5 /* UIImageExtensions.swift */,
 				61A5BF7526D714BA00AA1E97 /* UIViewControllerExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		61A5BF7726D72D1500AA1E97 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				61A5BF7B26D72D3700AA1E97 /* CustomTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 		61B9286726D41567002DF4CA /* OptionsScene */ = {
@@ -531,6 +542,7 @@
 			files = (
 				61A5BF7626D714BA00AA1E97 /* UIViewControllerExtensions.swift in Sources */,
 				6187232626CD782000BE2EA3 /* LoginOptionsView.swift in Sources */,
+				61A5BF8126D72D3800AA1E97 /* CustomTextField.swift in Sources */,
 				6155E5F926CC139300078289 /* AppDelegate.swift in Sources */,
 				613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */,
 				61F8D51A26D44ABB00F78552 /* LoginEmailAuthFactory.swift in Sources */,

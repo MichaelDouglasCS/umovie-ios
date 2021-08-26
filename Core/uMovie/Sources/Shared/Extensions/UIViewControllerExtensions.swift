@@ -5,7 +5,7 @@ import UIKit
 
 extension UIViewController {
 
-    func setupNavigationBar() {
+    func setupTranslucentNavigationBar() {
         guard let navigationController = self.navigationController else { return }
 
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)

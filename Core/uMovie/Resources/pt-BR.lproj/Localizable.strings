@@ -1,18 +1,16 @@
 // BRAND
 "Brand.title" = "uMovie";
 
-// LOGIN OPTIONS
-"Login.ContinueOption.Title" = "Como deseja continuar?";
-"Login.ContinueOption.Apple" = "Continuar com a Apple";
-"Login.ContinueOption.Facebook" = "Continuar com Facebook";
-"Login.ContinueOption.Email" = "Email";
+// LOGIN
+"Login.Options.Title" = "Como deseja continuar?";
+"Login.Options.Apple" = "Continuar com a Apple";
+"Login.Options.Facebook" = "Continuar com Facebook";
 
 "Login.EmailAuthentication.Title" = "Qual o seu email e senha?";
-"Login.EmailAuthentication.EmailTitle" = "Email";
-"Login.EmailAuthentication.PasswordTitle" = "Senha";
 "Login.EmailAuthentication.ForgotMyPasswordTitle" = "Esqueci minha senha";
 
-"Login.CreateAccount.ButtonTitle" = "Criar conta";
-
 // GENERAL
-"Button.Continue.Title" = "Continuar";
+"General.Continue.Title" = "Continuar";
+"General.CreateAccount.Title" = "Criar conta";
+"General.Email.title" = "Email";
+"General.Password.title" = "Senha";

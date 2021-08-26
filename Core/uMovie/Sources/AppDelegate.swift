@@ -1,3 +1,4 @@
+import IQKeyboardManager
 import UIKit
 
 @main
@@ -13,11 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        self.setupWindow()
+        setupDependencies()
+        setupWindow()
         return true
     }
 
     // MARK: - Private Methods
+
+    private func setupDependencies() {
+        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared().toolbarTintColor = Colors.darkBaseColor.color
+    }
 
     private func setupWindow() {
         self.window = UIWindow(frame: UIScreen.main.bounds)

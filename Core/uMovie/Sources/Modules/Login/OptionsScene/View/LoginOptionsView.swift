@@ -63,6 +63,7 @@ final class LoginOptionsView: UIView {
         button.imageEdgeInsets = .init(top: 12, left: 14, bottom: 12, right: .zero)
         button.addTarget(self, action: #selector(didTouchContinueWithAppleButton), for: .touchUpInside)
         button.tintColor = Colors.lightBaseColor.color
+        button.loadingColor = Colors.lightBaseColor.color
         button.isEnabled = true
         return button
     }()
@@ -83,7 +84,7 @@ final class LoginOptionsView: UIView {
 
     private lazy var continueWithEmailButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setTitle(Localization.Login.Options.email, for: .normal)
+        button.setTitle(Localization.General.Email.title, for: .normal)
         button.setTitleColor(Colors.primaryTextColor.color, for: .normal)
         button.addTarget(self, action: #selector(didTouchContinueWithEmailButton), for: .touchUpInside)
         button.loadingColor = Colors.darkGrayColor.color

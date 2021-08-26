@@ -31,7 +31,7 @@ final class LoginOptionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
+        setupTranslucentNavigationBar()
     }
 
     override func viewWillAppear(_ animated: Bool) {

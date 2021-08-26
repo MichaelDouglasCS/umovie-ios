@@ -2,7 +2,7 @@ import Foundation
 import SnapKit
 import UIKit
 
-class CustomActionButton: UIButton {
+final class CustomActionButton: UIButton {
 
     // MARK: - Internal Properties
 
@@ -12,6 +12,8 @@ class CustomActionButton: UIButton {
     var fontSize: CGFloat = 17.0
     var fontWeight: UIFont.Weight = .semibold
     var loadingColor: UIColor = Colors.lightBaseColor.color
+    var borderWidth: CGFloat = .zero
+    var borderColor: UIColor = Colors.darkBaseColor.color
 
     lazy var loadingView: UIActivityIndicatorView = {
         let loading = UIActivityIndicatorView(style: .medium)
@@ -76,11 +78,15 @@ class CustomActionButton: UIButton {
 
     private func setupUI() {
         addSubview(loadingView)
+
         layer.masksToBounds = true
         layer.cornerRadius = cornerRadius
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
+        adjustsImageWhenHighlighted = false
+
         titleLabel?.textAlignment = .center
         titleLabel?.font = .defaultSystem(withSize: fontSize, weight: fontWeight)
-        adjustsImageWhenHighlighted = false
 
         let enabled = isEnabled
         isEnabled = enabled
