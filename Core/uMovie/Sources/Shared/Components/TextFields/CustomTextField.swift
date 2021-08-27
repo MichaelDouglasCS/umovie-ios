@@ -16,6 +16,40 @@ final class CustomTextField: UITextField {
 
     private var shouldHighlight: Bool = false
 
+    private lazy var backgroundView: UIView = {
+        let view = UIView(frame: frame)
+        return view
+    }()
+
+    private lazy var inlinePlaceholderContainer: UIView = {
+        let container = UIView()
+        container.backgroundColor = Colors.lightBaseColor.color
+        return container
+    }()
+
+    private lazy var inlinePlaceholderLabel: UILabel = {
+        let label = UILabel()
+        label.text = placeholder
+        label.textColor = highlightedBorderColor
+        label.font = font
+        label.clipsToBounds = true
+        label.adjustsFontSizeToFitWidth = true
+        return label
+    }()
+
+    private var inlinePlaceholderLeadingConstraint: Constraint?
+    private var inlinePlaceholderCenterYConstraint: Constraint?
+
+    // MARK: - Initializers
+
+    init() {
+        super.init(frame: .zero)
+        setupBackgroundView()
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) { nil }
+
     // MARK: - Lifecycle
 
     override func draw(_ rect: CGRect) {
@@ -52,17 +86,67 @@ final class CustomTextField: UITextField {
 
     // MARK: - Private Methods
 
-    private func setupUI() {
-        backgroundColor = Colors.textfieldColor.color
-        clipsToBounds = true
+    private func setupBackgroundView() {
+        addSubview(backgroundView)
 
-        layer.cornerRadius = cornerRadius
-        layer.borderWidth = borderWidth
-        layer.borderColor = shouldHighlight ? highlightedBorderColor.cgColor : borderColor.cgColor
-        layer.masksToBounds = true
+        backgroundView.isUserInteractionEnabled = false
+        backgroundView.snp.makeConstraints { $0.edges.equalTo(self) }
+    }
+
+    private func setupUI() {
+        backgroundView.backgroundColor = Colors.lightBaseColor.color
+
+        backgroundView.layer.cornerRadius = cornerRadius
+        backgroundView.layer.borderWidth = borderWidth
+        backgroundView.layer.borderColor = shouldHighlight ? highlightedBorderColor.cgColor : borderColor.cgColor
     }
 
     private func setHighlight(_ highlight: Bool) {
         shouldHighlight = highlight
+        shouldHighlightInlinePlaceholder(highlight)
+    }
+
+    private func shouldHighlightInlinePlaceholder(_ highlight: Bool) {
+        let inlineLeading: CGFloat = textEdgeInsets.left - 4
+
+        if highlight {
+            inlinePlaceholderContainer.addSubview(inlinePlaceholderLabel)
+            addSubview(inlinePlaceholderContainer)
+
+            inlinePlaceholderContainer.snp.makeConstraints { make in
+                inlinePlaceholderLeadingConstraint = make.leading.equalTo(self).offset(inlineLeading).constraint
+                inlinePlaceholderCenterYConstraint = make.centerY.equalTo(self).constraint
+            }
+
+            inlinePlaceholderLabel.snp.makeConstraints { make in
+                make.top.equalTo(inlinePlaceholderContainer)
+                make.leading.equalTo(inlinePlaceholderContainer).offset(4)
+                make.trailing.equalTo(inlinePlaceholderContainer).offset(-4)
+                make.bottom.equalTo(inlinePlaceholderContainer)
+            }
+
+            layoutIfNeeded()
+
+            UIView.animate(withDuration: 0.25, delay: .zero, options: .curveEaseOut) {
+                self.inlinePlaceholderCenterYConstraint?.update(offset: -self.frame.height / 2)
+                self.inlinePlaceholderLeadingConstraint?.update(offset: inlineLeading)
+                self.inlinePlaceholderContainer.applyTransform(withScale: 0.8, anchorPoint: .init(x: 1, y: 1))
+                self.inlinePlaceholderContainer.alpha = 1.0
+                self.placeholder = nil
+                self.layoutIfNeeded()
+            }
+        } else {
+
+            UIView.animate(withDuration: 0.25, delay: .zero, options: .curveEaseOut) {
+                self.inlinePlaceholderLeadingConstraint?.update(offset: inlineLeading)
+                self.inlinePlaceholderCenterYConstraint?.update(offset: 0.0)
+                self.inlinePlaceholderContainer.transform = .identity
+                self.inlinePlaceholderContainer.alpha = 0.3
+                self.layoutIfNeeded()
+            } completion: { _ in
+                self.placeholder = self.inlinePlaceholderLabel.text
+                self.inlinePlaceholderContainer.removeFromSuperview()
+            }
+        }
     }
 }

@@ -46,7 +46,7 @@ final class LoginEmailAuthView: UIView {
         textField.returnKeyType = .done
         textField.enablesReturnKeyAutomatically = true
         textField.isSecureTextEntry = true
-        textField.placeholder = Localization.General.Password.title
+        textField.placeholder = "Data de Nascimento"
         textField.tintColor = Colors.darkBaseColor.color
         return textField
     }()
@@ -89,7 +89,7 @@ final class LoginEmailAuthView: UIView {
         stackView.axis = .vertical
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
-        stackView.spacing = 16
+        stackView.spacing = 18
         return stackView
     }()
 

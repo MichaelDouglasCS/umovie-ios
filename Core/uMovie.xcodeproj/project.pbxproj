@@ -26,6 +26,7 @@
 		61C15EC726CEC46E00162D38 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C15EC626CEC46E00162D38 /* Assets.swift */; };
 		61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C15EC826CEC65B00162D38 /* Colors.xcassets */; };
 		61C15ECC26CECFA000162D38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C15ECE26CECFA000162D38 /* Localizable.strings */; };
+		61D6091B26D9A9290089B5F5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6091A26D9A9290089B5F5 /* UIViewExtensions.swift */; };
 		61F8D51526D42D7600F78552 /* LoginEmailAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51426D42D7600F78552 /* LoginEmailAuthViewController.swift */; };
 		61F8D51726D4431000F78552 /* LoginOptionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51626D4431000F78552 /* LoginOptionsRouter.swift */; };
 		61F8D51A26D44ABB00F78552 /* LoginEmailAuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51926D44ABB00F78552 /* LoginEmailAuthFactory.swift */; };
@@ -70,6 +71,7 @@
 		61C15EC826CEC65B00162D38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		61C15ECD26CECFA000162D38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		61C15ED226CED09A00162D38 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		61D6091A26D9A9290089B5F5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		61F8D51426D42D7600F78552 /* LoginEmailAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthViewController.swift; sourceTree = "<group>"; };
 		61F8D51626D4431000F78552 /* LoginOptionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsRouter.swift; sourceTree = "<group>"; };
 		61F8D51926D44ABB00F78552 /* LoginEmailAuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthFactory.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				613B268126CF50990096A4F8 /* UIFontExtensions.swift */,
 				6125784226CF373E00653CB5 /* UIImageExtensions.swift */,
 				61A5BF7526D714BA00AA1E97 /* UIViewControllerExtensions.swift */,
+				61D6091A26D9A9290089B5F5 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				6125783D26CED55100653CB5 /* Localization.swift in Sources */,
 				61C15EC726CEC46E00162D38 /* Assets.swift in Sources */,
 				61F8D51726D4431000F78552 /* LoginOptionsRouter.swift in Sources */,
+				61D6091B26D9A9290089B5F5 /* UIViewExtensions.swift in Sources */,
 				61F8D51C26D44B3500F78552 /* LoginEmailAuthRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
