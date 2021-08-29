@@ -28,7 +28,7 @@ final class CustomActionButton: UIButton {
                 loadingView.frame = bounds
                 loadingView.backgroundColor = enabledBackgroundColor
 
-                loadingView.snp.makeConstraints({ $0.edges.equalTo(self) })
+                loadingView.snp.makeConstraints { $0.edges.equalTo(self) }
 
                 loadingView.startAnimating()
             } else {

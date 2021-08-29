@@ -23,7 +23,9 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 internal enum Asset {
   internal enum Assets {
     internal static let appleIcon = ImageAsset(name: "apple-icon")
+    internal static let closeEyeIcon = ImageAsset(name: "close-eye-icon")
     internal static let facebookIcon = ImageAsset(name: "facebook-icon")
+    internal static let openEyeIcon = ImageAsset(name: "open-eye-icon")
     internal static let umovieIcon = ImageAsset(name: "umovie-icon")
     internal static let brandIllustration = ImageAsset(name: "brand-illustration")
   }

@@ -40,14 +40,16 @@ final class LoginEmailAuthView: UIView {
     private lazy var passwordTextField: CustomTextField = {
         let textField = CustomTextField()
         textField.textContentType = .password
-        textField.keyboardType = .default
+        textField.keyboardType = .alphabet
         textField.autocapitalizationType = .none
         textField.autocorrectionType = .no
         textField.returnKeyType = .done
         textField.enablesReturnKeyAutomatically = true
         textField.isSecureTextEntry = true
-        textField.placeholder = "Data de Nascimento"
+        textField.placeholder = Localization.General.Password.title
         textField.tintColor = Colors.darkBaseColor.color
+        textField.rightView = seePasswordButton
+        textField.rightViewMode = .always
         return textField
     }()
 
@@ -58,6 +60,32 @@ final class LoginEmailAuthView: UIView {
         stackView.distribution = .fillEqually
         stackView.spacing = 16
         return stackView
+    }()
+
+    private lazy var seePasswordButton: CustomActionButton = {
+        let button = CustomActionButton()
+        button.setImage(Images.closeEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .normal)
+        button.setImage(Images.openEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .selected)
+        button.imageEdgeInsets = .init(top: .zero, left: .zero, bottom: .zero, right: 8)
+        button.addTarget(self, action: #selector(didTouchForgotPasswordButton), for: .touchUpInside)
+        button.tintColor = Colors.separatorColor.color
+        button.cornerRadius = .zero
+        button.enabledBackgroundColor = .clear
+        button.isEnabled = true
+        return button
+    }()
+
+    private lazy var forgotPasswordButton: CustomActionButton = {
+        let button = CustomActionButton()
+        button.setTitle(Localization.Login.EmailAuthentication.forgotMyPasswordTitle, for: .normal)
+        button.setTitleColor(Colors.primaryTextColor.color, for: .normal)
+        button.addTarget(self, action: #selector(didTouchForgotPasswordButton), for: .touchUpInside)
+        button.fontSize = 13
+        button.fontWeight = .regular
+        button.cornerRadius = .zero
+        button.enabledBackgroundColor = .clear
+        button.isEnabled = true
+        return button
     }()
 
     private lazy var continueButton: CustomActionButton = {
@@ -89,7 +117,7 @@ final class LoginEmailAuthView: UIView {
         stackView.axis = .vertical
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
-        stackView.spacing = 18
+        stackView.spacing = 16
         return stackView
     }()
 
@@ -108,6 +136,11 @@ final class LoginEmailAuthView: UIView {
     required init?(coder: NSCoder) { nil }
 
     // MARK: - Actions
+
+    @objc private func didTouchForgotPasswordButton(_ sender: CustomActionButton) {
+        sender.isSelected.toggle()
+        passwordTextField.isSecureTextEntry = !sender.isSelected
+    }
 
     @objc private func didTouchContinueButton(_ sender: CustomActionButton) {
 
@@ -133,7 +166,7 @@ extension LoginEmailAuthView {
         addSubview(titleLabel)
 
         titleLabel.snp.makeConstraints { make in
-            make.top.equalTo(self.safeAreaLayoutGuide).offset(8)
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(12)
             make.leading.equalTo(self).offset(16)
             make.trailing.greaterThanOrEqualTo(self).offset(-16)
         }
@@ -154,17 +187,22 @@ extension LoginEmailAuthView {
     }
 
     private func setupButtonsConstraints() {
+        addSubview(forgotPasswordButton)
         addSubview(loginButtonsStackView)
 
+        forgotPasswordButton.snp.makeConstraints { make in
+            make.height.equalTo(25)
+            make.top.equalTo(textFieldStackView.snp.bottom).offset(4)
+            make.leading.equalTo(textFieldStackView).offset(2)
+        }
+
         loginButtonsStackView.snp.makeConstraints { make in
-            make.top.equalTo(textFieldStackView.snp.bottom).offset(50)
+            make.top.equalTo(forgotPasswordButton.snp.bottom).offset(30)
             make.leading.equalTo(self).offset(16)
             make.trailing.equalTo(self).offset(-16)
         }
 
-        continueButton.snp.makeConstraints { make in
-            make.height.equalTo(48)
-        }
+        continueButton.snp.makeConstraints { $0.height.equalTo(48) }
     }
 }
 

@@ -23,7 +23,9 @@ final class CustomTextField: UITextField {
 
     private lazy var inlinePlaceholderContainer: UIView = {
         let container = UIView()
-        container.backgroundColor = Colors.lightBaseColor.color
+        container.backgroundColor = Colors.textfieldColor.color
+        container.layer.cornerRadius = 4
+        container.layer.masksToBounds = true
         return container
     }()
 
@@ -94,11 +96,12 @@ final class CustomTextField: UITextField {
     }
 
     private func setupUI() {
-        backgroundView.backgroundColor = Colors.lightBaseColor.color
+        backgroundView.backgroundColor = Colors.textfieldColor.color
 
         backgroundView.layer.cornerRadius = cornerRadius
         backgroundView.layer.borderWidth = borderWidth
         backgroundView.layer.borderColor = shouldHighlight ? highlightedBorderColor.cgColor : borderColor.cgColor
+        rightView?.tintColor = shouldHighlight ? highlightedBorderColor : borderColor
     }
 
     private func setHighlight(_ highlight: Bool) {
@@ -130,7 +133,7 @@ final class CustomTextField: UITextField {
             UIView.animate(withDuration: 0.25, delay: .zero, options: .curveEaseOut) {
                 self.inlinePlaceholderCenterYConstraint?.update(offset: -self.frame.height / 2)
                 self.inlinePlaceholderLeadingConstraint?.update(offset: inlineLeading)
-                self.inlinePlaceholderContainer.applyTransform(withScale: 0.8, anchorPoint: .init(x: 1, y: 1))
+                self.inlinePlaceholderContainer.applyTransform(withScale: 0.75, anchorPoint: .init(x: 1, y: 1))
                 self.inlinePlaceholderContainer.alpha = 1.0
                 self.placeholder = nil
                 self.layoutIfNeeded()
