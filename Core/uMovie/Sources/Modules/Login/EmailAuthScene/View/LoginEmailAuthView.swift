@@ -3,7 +3,9 @@ import SnapKit
 import UIKit
 
 protocol LoginEmailAuthDisplayDelegate: AnyObject {
-    func didTouchContinueWith(email: String, password: String)
+    func didTouchForgotPassword()
+    func didTouchContinue(email: String, password: String)
+    func didTouchCreateAccount()
 }
 
 protocol LoginEmailAuthDisplay: UIView {
@@ -143,14 +145,14 @@ final class LoginEmailAuthView: UIView {
     }
 
     @objc private func didTouchForgotPasswordButton(_ sender: CustomActionButton) {
-
+        delegate?.didTouchForgotPassword()
     }
 
     @objc private func didTouchContinueButton(_ sender: CustomActionButton) {
 
         if let email = emailTextField.text, !email.isEmpty,
            let password = passwordTextField.text, !password.isEmpty {
-            delegate?.didTouchContinueWith(email: email, password: password)
+            delegate?.didTouchContinue(email: email, password: password)
         } else {
             let topMostViewController = UIApplication.shared.topMostViewController()
             topMostViewController?.presentAlert(
@@ -163,7 +165,7 @@ final class LoginEmailAuthView: UIView {
     }
 
     @objc private func didTouchCreateAccountButton(_ sender: CustomActionButton) {
-
+        delegate?.didTouchCreateAccount()
     }
 }
 

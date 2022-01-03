@@ -2,9 +2,6 @@ PODS:
   - Alamofire (5.4.3)
   - Firebase/Analytics (8.10.0):
     - Firebase/Core
-  - Firebase/Auth (8.10.0):
-    - Firebase/CoreOnly
-    - FirebaseAuth (~> 8.10.0)
   - Firebase/Core (8.10.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 8.10.0)
@@ -31,11 +28,6 @@ PODS:
     - GoogleUtilities/Network (~> 7.6)
     - "GoogleUtilities/NSData+zlib (~> 7.6)"
     - nanopb (~> 2.30908.0)
-  - FirebaseAuth (8.10.0):
-    - FirebaseCore (~> 8.0)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
-    - GoogleUtilities/Environment (~> 7.6)
-    - GTMSessionFetcher/Core (~> 1.5)
   - FirebaseCore (8.10.0):
     - FirebaseCoreDiagnostics (~> 8.0)
     - GoogleUtilities/Environment (~> 7.6)
@@ -100,7 +92,6 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.6.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher/Core (1.7.0)
   - IQKeyboardManager (6.5.6)
   - Kingfisher (6.3.1)
   - nanopb (2.30908.0):
@@ -115,7 +106,6 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - Firebase/Analytics
-  - Firebase/Auth
   - Firebase/Crashlytics
   - IQKeyboardManager (~> 6.5)
   - Kingfisher (~> 6.0)
@@ -127,7 +117,6 @@ SPEC REPOS:
     - Alamofire
     - Firebase
     - FirebaseAnalytics
-    - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCrashlytics
@@ -135,7 +124,6 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
-    - GTMSessionFetcher
     - IQKeyboardManager
     - Kingfisher
     - nanopb
@@ -147,7 +135,6 @@ SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   Firebase: 44213362f1dcc52555b935dc925ed35ac55f1b20
   FirebaseAnalytics: 319c9b3b1bdd400d60e2f415dff0c5f6959e6760
-  FirebaseAuth: 59a2d2b933b5b79e18fb1e6ad230c6abdaa73d26
   FirebaseCore: 04186597c095da37d90ff9fd3e53bc61a1ff2440
   FirebaseCoreDiagnostics: 56fb7216d87e0e6ec2feddefa9d8a392fe8b2c18
   FirebaseCrashlytics: 3b7f17cdf5bf1ae6ad5956696a6c26edeb39cca7
@@ -155,7 +142,6 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: a3311dbcf3ea651e5a070fe8559b57c174ada081
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
-  GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
@@ -163,6 +149,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
 
-PODFILE CHECKSUM: f2f8d98767eaf315a001c1bba41017d523b2867c
+PODFILE CHECKSUM: 720edf347465c90bd2f730ab1bd5c647209d986f
 
 COCOAPODS: 1.11.2

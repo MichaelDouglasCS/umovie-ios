@@ -34,6 +34,7 @@ extension UIViewController {
         completion: (() -> Void)? = nil
     ) -> UIAlertController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+        alert.view.tintColor = Colors.brandColor.color
         actions.forEach { alert.addAction($0) }
 
         DispatchQueue.main.async { self.present(alert, animated: true, completion: completion) }

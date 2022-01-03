@@ -6,15 +6,18 @@ final class LoginEmailAuthViewController: UIViewController {
     // MARK: - Private Properties
 
     private let router: LoginEmailAuthRoutingLogic
+    private let interactor: LoginEmailAuthBusinessLogic
     private let customView: LoginEmailAuthDisplay
 
     // MARK: - Initializers
 
     init(
         router: LoginEmailAuthRoutingLogic,
+        interactor: LoginEmailAuthBusinessLogic,
         view: LoginEmailAuthDisplay
     ) {
         self.router = router
+        self.interactor = interactor
         self.customView = view
         super.init(nibName: nil, bundle: nil)
     }
@@ -38,7 +41,15 @@ final class LoginEmailAuthViewController: UIViewController {
 
 extension LoginEmailAuthViewController: LoginEmailAuthDisplayDelegate {
 
-    func didTouchContinueWith(email: String, password: String) {
+    func didTouchForgotPassword() {
+        // TODO - Handle Forgot Password
+    }
 
+    func didTouchContinue(email: String, password: String) {
+        interactor.authenticate(request: .init(email: email, password: password))
+    }
+
+    func didTouchCreateAccount() {
+        // TODO - Handle Create Account
     }
 }
