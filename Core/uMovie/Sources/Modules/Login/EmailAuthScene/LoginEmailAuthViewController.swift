@@ -38,4 +38,7 @@ final class LoginEmailAuthViewController: UIViewController {
 
 extension LoginEmailAuthViewController: LoginEmailAuthDisplayDelegate {
 
+    func didTouchContinueWith(email: String, password: String) {
+
+    }
 }

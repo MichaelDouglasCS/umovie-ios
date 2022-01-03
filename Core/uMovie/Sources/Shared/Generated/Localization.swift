@@ -11,28 +11,33 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum Localization {
 
+  public enum Alert {
+    /// Oops! =(
+    public static let ops = Localization.tr("Localizable", "Alert.Ops")
+    public enum EmptyField {
+      /// Please, fill all fields to continue.
+      public static let message = Localization.tr("Localizable", "Alert.EmptyField.Message")
+    }
+  }
+
   public enum Brand {
     /// uMovie
     public static let title = Localization.tr("Localizable", "Brand.title")
   }
 
   public enum General {
-    public enum Continue {
-      /// Continue
-      public static let title = Localization.tr("Localizable", "General.Continue.Title")
-    }
-    public enum CreateAccount {
-      /// Create account
-      public static let title = Localization.tr("Localizable", "General.CreateAccount.Title")
-    }
-    public enum Email {
-      /// Email
-      public static let title = Localization.tr("Localizable", "General.Email.title")
-    }
-    public enum Password {
-      /// Password
-      public static let title = Localization.tr("Localizable", "General.Password.title")
-    }
+    /// Continue
+    public static let `continue` = Localization.tr("Localizable", "General.Continue")
+    /// Create account
+    public static let createAccount = Localization.tr("Localizable", "General.CreateAccount")
+    /// Email
+    public static let email = Localization.tr("Localizable", "General.Email")
+    /// Got it!
+    public static let gotIt = Localization.tr("Localizable", "General.GotIt")
+    /// Ok!
+    public static let okay = Localization.tr("Localizable", "General.Okay")
+    /// Password
+    public static let password = Localization.tr("Localizable", "General.Password")
   }
 
   public enum Login {

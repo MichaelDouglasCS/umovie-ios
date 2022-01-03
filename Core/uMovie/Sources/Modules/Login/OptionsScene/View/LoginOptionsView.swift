@@ -84,7 +84,7 @@ final class LoginOptionsView: UIView {
 
     private lazy var continueWithEmailButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setTitle(Localization.General.Email.title, for: .normal)
+        button.setTitle(Localization.General.email, for: .normal)
         button.setTitleColor(Colors.primaryTextColor.color, for: .normal)
         button.addTarget(self, action: #selector(didTouchContinueWithEmailButton), for: .touchUpInside)
         button.loadingColor = Colors.darkGrayColor.color

@@ -1,6 +1,8 @@
 import Foundation
 import UIKit
 
+// MARK: - View Transform
+
 extension UIView {
 
     func applyTransform(withScale scale: CGFloat, anchorPoint: CGPoint) {

@@ -3,7 +3,7 @@ import SnapKit
 import UIKit
 
 protocol LoginEmailAuthDisplayDelegate: AnyObject {
-
+    func didTouchContinueWith(email: String, password: String)
 }
 
 protocol LoginEmailAuthDisplay: UIView {
@@ -32,7 +32,7 @@ final class LoginEmailAuthView: UIView {
         textField.returnKeyType = .next
         textField.clearButtonMode = .whileEditing
         textField.enablesReturnKeyAutomatically = true
-        textField.placeholder = Localization.General.Email.title
+        textField.placeholder = Localization.General.email
         textField.tintColor = Colors.darkBaseColor.color
         return textField
     }()
@@ -46,7 +46,7 @@ final class LoginEmailAuthView: UIView {
         textField.returnKeyType = .done
         textField.enablesReturnKeyAutomatically = true
         textField.isSecureTextEntry = true
-        textField.placeholder = Localization.General.Password.title
+        textField.placeholder = Localization.General.password
         textField.tintColor = Colors.darkBaseColor.color
         textField.rightView = seePasswordButton
         textField.rightViewMode = .always
@@ -67,7 +67,7 @@ final class LoginEmailAuthView: UIView {
         button.setImage(Images.closeEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .selected)
         button.setImage(Images.openEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .normal)
         button.imageEdgeInsets = .init(top: .zero, left: .zero, bottom: .zero, right: 8)
-        button.addTarget(self, action: #selector(didTouchForgotPasswordButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTouchSeePasswordButton), for: .touchUpInside)
         button.tintColor = Colors.separatorColor.color
         button.cornerRadius = .zero
         button.enabledBackgroundColor = .clear
@@ -90,7 +90,7 @@ final class LoginEmailAuthView: UIView {
 
     private lazy var continueButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setTitle(Localization.General.Continue.title, for: .normal)
+        button.setTitle(Localization.General.continue, for: .normal)
         button.setTitleColor(Colors.lightBaseColor.color, for: .normal)
         button.addTarget(self, action: #selector(didTouchContinueButton), for: .touchUpInside)
         button.fontWeight = .bold
@@ -101,7 +101,7 @@ final class LoginEmailAuthView: UIView {
 
     private lazy var createAccountButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setTitle(Localization.General.CreateAccount.title, for: .normal)
+        button.setTitle(Localization.General.createAccount, for: .normal)
         button.setTitleColor(Colors.darkBaseColor.color, for: .normal)
         button.addTarget(self, action: #selector(didTouchCreateAccountButton), for: .touchUpInside)
         button.borderWidth = 1.5
@@ -137,13 +137,29 @@ final class LoginEmailAuthView: UIView {
 
     // MARK: - Actions
 
-    @objc private func didTouchForgotPasswordButton(_ sender: CustomActionButton) {
+    @objc private func didTouchSeePasswordButton(_ sender: CustomActionButton) {
         sender.isSelected.toggle()
         passwordTextField.isSecureTextEntry = !sender.isSelected
     }
 
+    @objc private func didTouchForgotPasswordButton(_ sender: CustomActionButton) {
+
+    }
+
     @objc private func didTouchContinueButton(_ sender: CustomActionButton) {
 
+        if let email = emailTextField.text, !email.isEmpty,
+           let password = passwordTextField.text, !password.isEmpty {
+            delegate?.didTouchContinueWith(email: email, password: password)
+        } else {
+            let topMostViewController = UIApplication.shared.topMostViewController()
+            topMostViewController?.presentAlert(
+                title: Localization.Alert.ops,
+                message: Localization.Alert.EmptyField.message,
+                preferredStyle: .alert,
+                actions: .init(title: Localization.General.gotIt, style: .default)
+            )
+        }
     }
 
     @objc private func didTouchCreateAccountButton(_ sender: CustomActionButton) {

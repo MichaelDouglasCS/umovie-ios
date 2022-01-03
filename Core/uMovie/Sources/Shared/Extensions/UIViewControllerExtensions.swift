@@ -21,3 +21,23 @@ extension UIViewController {
         navigationController.setNavigationBarHidden(show, animated: animated)
     }
 }
+
+// MARK: - Alert Controller
+
+extension UIViewController {
+
+    @discardableResult func presentAlert(
+        title: String?,
+        message: String?,
+        preferredStyle: UIAlertController.Style,
+        actions: UIAlertAction...,
+        completion: (() -> Void)? = nil
+    ) -> UIAlertController {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+        actions.forEach { alert.addAction($0) }
+
+        DispatchQueue.main.async { self.present(alert, animated: true, completion: completion) }
+
+        return alert
+    }
+}

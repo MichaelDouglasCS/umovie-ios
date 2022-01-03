@@ -10,7 +10,13 @@
 "Login.EmailAuthentication.ForgotMyPasswordTitle" = "Esqueci minha senha";
 
 // GENERAL
-"General.Continue.Title" = "Continuar";
-"General.CreateAccount.Title" = "Criar conta";
-"General.Email.title" = "Email";
-"General.Password.title" = "Senha";
+"General.Continue" = "Continuar";
+"General.CreateAccount" = "Criar conta";
+"General.Email" = "Email";
+"General.Password" = "Senha";
+"General.GotIt" = "Entendi!";
+"General.Okay" = "Ok!";
+
+// ALERT
+"Alert.Ops" = "Oops! =(";
+"Alert.EmptyField.Message" = "Por favor, preencha todos os campos para continuar.";
