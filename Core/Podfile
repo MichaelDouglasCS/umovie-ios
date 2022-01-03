@@ -15,6 +15,9 @@ end
 # Project Pods
 def project_pods
     pod 'Alamofire', '~> 5.4'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Crashlytics'
+    pod 'Firebase/Analytics'
     pod 'IQKeyboardManager', '~> 6.5'
     pod 'Kingfisher', '~> 6.0'
     pod 'SwiftGen', '~> 6.0'

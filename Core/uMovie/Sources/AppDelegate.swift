@@ -1,3 +1,4 @@
+import Firebase
 import IQKeyboardManager
 import UIKit
 
@@ -22,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Private Methods
 
     private func setupDependencies() {
+        FirebaseApp.configure()
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         IQKeyboardManager.shared().toolbarTintColor = Colors.darkBaseColor.color
     }

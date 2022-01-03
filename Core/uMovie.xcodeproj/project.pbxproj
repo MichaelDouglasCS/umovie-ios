@@ -16,6 +16,8 @@
 		613B0A2426CDADC400451BA2 /* LoginOptionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2326CDADC400451BA2 /* LoginOptionsFactory.swift */; };
 		613B0A2626CDF9B100451BA2 /* SwiftGenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */; };
 		613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613B268126CF50990096A4F8 /* UIFontExtensions.swift */; };
+		6148FEC726F042B600981651 /* LoginCreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148FEC626F042B600981651 /* LoginCreateAccountView.swift */; };
+		6148FEC926F0445800981651 /* LoginCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148FEC826F0445800981651 /* LoginCreateAccountViewController.swift */; };
 		6155E5F926CC139300078289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E5F826CC139300078289 /* AppDelegate.swift */; };
 		6155E60226CC139400078289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6155E60126CC139400078289 /* Assets.xcassets */; };
 		6155E61026CC139400078289 /* uMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6155E60F26CC139400078289 /* uMovieTests.swift */; };
@@ -26,6 +28,7 @@
 		61C15EC726CEC46E00162D38 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C15EC626CEC46E00162D38 /* Assets.swift */; };
 		61C15EC926CEC65B00162D38 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61C15EC826CEC65B00162D38 /* Colors.xcassets */; };
 		61C15ECC26CECFA000162D38 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61C15ECE26CECFA000162D38 /* Localizable.strings */; };
+		61D5C8A32782749E005F3E3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D5C8A22782749E005F3E3D /* GoogleService-Info.plist */; };
 		61D6091B26D9A9290089B5F5 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D6091A26D9A9290089B5F5 /* UIViewExtensions.swift */; };
 		61F8D51526D42D7600F78552 /* LoginEmailAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51426D42D7600F78552 /* LoginEmailAuthViewController.swift */; };
 		61F8D51726D4431000F78552 /* LoginOptionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8D51626D4431000F78552 /* LoginOptionsRouter.swift */; };
@@ -56,6 +59,8 @@
 		613B0A2326CDADC400451BA2 /* LoginOptionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsFactory.swift; sourceTree = "<group>"; };
 		613B0A2526CDF9B100451BA2 /* SwiftGenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGenUtils.swift; sourceTree = "<group>"; };
 		613B268126CF50990096A4F8 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		6148FEC626F042B600981651 /* LoginCreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCreateAccountView.swift; sourceTree = "<group>"; };
+		6148FEC826F0445800981651 /* LoginCreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCreateAccountViewController.swift; sourceTree = "<group>"; };
 		6155E5F526CC139300078289 /* uMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6155E5F826CC139300078289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6155E60126CC139400078289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		61C15EC826CEC65B00162D38 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		61C15ECD26CECFA000162D38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		61C15ED226CED09A00162D38 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		61D5C8A22782749E005F3E3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61D6091A26D9A9290089B5F5 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		61F8D51426D42D7600F78552 /* LoginEmailAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailAuthViewController.swift; sourceTree = "<group>"; };
 		61F8D51626D4431000F78552 /* LoginOptionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsRouter.swift; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				6155E60626CC139400078289 /* Info.plist */,
+				61D5C8A22782749E005F3E3D /* GoogleService-Info.plist */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -157,6 +164,23 @@
 				6125784026CEFA3E00653CB5 /* CustomActionButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		6148FEC426F0428000981651 /* CreateAccountScene */ = {
+			isa = PBXGroup;
+			children = (
+				6148FEC826F0445800981651 /* LoginCreateAccountViewController.swift */,
+				6148FEC526F0429A00981651 /* View */,
+			);
+			path = CreateAccountScene;
+			sourceTree = "<group>";
+		};
+		6148FEC526F0429A00981651 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6148FEC626F042B600981651 /* LoginCreateAccountView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6155E5EC26CC139300078289 = {
@@ -285,6 +309,7 @@
 		61F8D34E26CC6F2600DF04A2 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				6148FEC426F0428000981651 /* CreateAccountScene */,
 				61B9286826D415AA002DF4CA /* EmailAuthScene */,
 				61B9286726D41567002DF4CA /* OptionsScene */,
 			);
@@ -349,6 +374,7 @@
 				D1DB38A341E40F7529E93CE8 /* [CP] Embed Pods Frameworks */,
 				6187232B26CD9D1C00BE2EA3 /* SwiftLint */,
 				61AD0DC126CEB07B00E50DA4 /* SwiftGen */,
+				611B54962782792A00D0A30B /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -426,6 +452,7 @@
 				6155E60226CC139400078289 /* Assets.xcassets in Resources */,
 				6125783B26CED18000653CB5 /* LaunchScreen.storyboard in Resources */,
 				6106690726CEBEC100F0E6F1 /* swiftgen.yml in Resources */,
+				61D5C8A32782749E005F3E3D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +466,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		611B54962782792A00D0A30B /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		6187232B26CD9D1C00BE2EA3 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -547,7 +594,9 @@
 				6187232626CD782000BE2EA3 /* LoginOptionsView.swift in Sources */,
 				61A5BF8126D72D3800AA1E97 /* CustomTextField.swift in Sources */,
 				6155E5F926CC139300078289 /* AppDelegate.swift in Sources */,
+				6148FEC726F042B600981651 /* LoginCreateAccountView.swift in Sources */,
 				613B268226CF50990096A4F8 /* UIFontExtensions.swift in Sources */,
+				6148FEC926F0445800981651 /* LoginCreateAccountViewController.swift in Sources */,
 				61F8D51A26D44ABB00F78552 /* LoginEmailAuthFactory.swift in Sources */,
 				6125784126CEFA3E00653CB5 /* CustomActionButton.swift in Sources */,
 				61B9286B26D416D7002DF4CA /* LoginEmailAuthView.swift in Sources */,
@@ -728,6 +777,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 4Q582659G6;
 				INFOPLIST_FILE = "$(SRCROOT)/uMovie/Resources/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -749,6 +799,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 4Q582659G6;
 				INFOPLIST_FILE = "$(SRCROOT)/uMovie/Resources/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

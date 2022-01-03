@@ -64,8 +64,8 @@ final class LoginEmailAuthView: UIView {
 
     private lazy var seePasswordButton: CustomActionButton = {
         let button = CustomActionButton()
-        button.setImage(Images.closeEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .normal)
-        button.setImage(Images.openEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .selected)
+        button.setImage(Images.closeEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .selected)
+        button.setImage(Images.openEyeIcon.image.resizeImage(to: .init(width: 32, height: 16)), for: .normal)
         button.imageEdgeInsets = .init(top: .zero, left: .zero, bottom: .zero, right: 8)
         button.addTarget(self, action: #selector(didTouchForgotPasswordButton), for: .touchUpInside)
         button.tintColor = Colors.separatorColor.color
