@@ -93,6 +93,7 @@ PODS:
   - GoogleUtilities/UserDefaults (7.6.0):
     - GoogleUtilities/Logger
   - IQKeyboardManager (6.5.6)
+  - KeychainAccess (4.2.2)
   - Kingfisher (6.3.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -105,9 +106,10 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.4)
-  - Firebase/Analytics
-  - Firebase/Crashlytics
+  - Firebase/Analytics (~> 8.10.0)
+  - Firebase/Crashlytics (~> 8.10.0)
   - IQKeyboardManager (~> 6.5)
+  - KeychainAccess (~> 4.2.2)
   - Kingfisher (~> 6.0)
   - SnapKit (~> 5.0.0)
   - SwiftGen (~> 6.0)
@@ -125,6 +127,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - IQKeyboardManager
+    - KeychainAccess
     - Kingfisher
     - nanopb
     - PromisesObjC
@@ -143,12 +146,13 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
 
-PODFILE CHECKSUM: 720edf347465c90bd2f730ab1bd5c647209d986f
+PODFILE CHECKSUM: 8cf11213976df8df98dc3a85fff145cc3e478c70
 
 COCOAPODS: 1.11.2
